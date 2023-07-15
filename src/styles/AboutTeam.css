@@ -1,20 +1,76 @@
-/* body{
-    background: url();
-} */
 
 #team {
-    display: flex;
-    flex-wrap: wrap;
+  /* background-color: antiquewhite; */
+  /* background: url('low-poly-grid-haikei.svg'); */
+  /* background-size: 100vh; */
+  text-align: center;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
-.teamCard {
-    margin-left: auto;
-    margin-right: auto;
-    background: rgba(255, 255, 255, 0.192);
-    backdrop-filter: blur(10px);
-    height: 250px;
-    width: 600px;
-    border-radius: 15px;
-    /* border: 1px solid rgba(43, 43, 43, 0.568); */
-    text-align: center;
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin:10px auto 10px auto;
+}
+
+.title {
+
+  background-color: #F10086;
+  display: flex;  
+  padding-top: 5px;
+  /* border-top: 1px solid #F10086;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px; */
+}
+
+
+.logo{
+  width: 25%;
+  align-items: center;
+}
+.logo img{
+  width: 60%;
+}
+.details{
+  display: flexbox;
+  flex-direction: column;
+}
+.name h3{
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+}
+.role p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.photo {
+  background-color: black;
+}
+
+.photo img {
+  width: 90%;
+}
+
+.socials {
+  padding: 1rem;
+  background-color: black;
+  border-top: 1px solid grey;
+}
+
+.socials a {
+  text-decoration: none;
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.socials a i:hover {
+  transform: scale(1.75, 1.75);
+  transition: 0.1s ease-in;
 }
