@@ -1,7 +1,7 @@
 import React from "react";
 
 import Card from "../components/Card";
-import { coreTeam } from "../components/cards";
+import { coreTeam,webTeam} from "../components/cards";
 
 function AboutTeam() {
     return <section id="aboutTeam">

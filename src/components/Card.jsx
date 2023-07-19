@@ -2,7 +2,7 @@ import React from "react";
 import Tilt from 'react-vanilla-tilt'
 
 function Card(props) {
-    return  <Tilt>
+    return  <Tilt id="tilt" style={{}}>
         <div className="card" data-tilt="true">
 
 <div className="title">

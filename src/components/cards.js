@@ -15,17 +15,19 @@ const coreTeam = [{
     role: "Lead"
 }]
 
-const webTeam = [{
+const webTeam = [
+    {
+        name:"Surya",
+        role:"Lead",
+        photo:"surya"
+    },
+    {
     name: "Sruthik",
     role: "Web Developer",
     photo:"sruthik"
 
-},
-{
-    name:"Surya",
-    role:"Lead",
-    photo:"surya"
-}
+    }
+
 ]
 
 

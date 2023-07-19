@@ -30,7 +30,7 @@ function App() {
           <Home></Home>
         </ParallaxLayer>
         <ParallaxLayer offset={1}>
-          <AboutHackJNU></AboutHackJNU>
+          <AboutTeam></AboutTeam>
         </ParallaxLayer>
         <ParallaxLayer offset={2}>
           <Timeline></Timeline>

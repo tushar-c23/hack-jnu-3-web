@@ -1,3 +1,10 @@
+#tilt{
+  /* margin: 0 !important;
+  padding: 0 !important;
+  background: black !important; */
+  box-shadow: 0 0px 0px rgba(0,0,0,0) !important;
+}
+
 h1{
   font-size: 3rem;
 }
