@@ -1,54 +1,78 @@
+h1{
+  font-size: 3rem;
+}
+#aboutTeam {
+  display: flex;
+  flex-direction: column;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  text-align: center;
+}
+body{
+  background-color: rgb(19, 17, 17);
+}
+#webTeam {
+  display: flex;
+  flex-direction: column;
 
-#team {
-  /* background-color: antiquewhite; */
-  /* background: url('low-poly-grid-haikei.svg'); */
-  /* background-size: 100vh; */
+}
+
+.sectionTitle {
+  color: red;
+}
+
+.cards {
+  display: flex;
   text-align: center;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  gap: 2rem;
 }
 
 .card {
   display: flex;
   flex-direction: column;
+
   width: 200px;
-  margin:10px auto 10px auto;
+  margin: 10px auto 10px auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 #F10086;
 }
 
 .title {
-
   background-color: #F10086;
-  display: flex;  
+  display: flex;
   padding-top: 5px;
-  /* border-top: 1px solid #F10086;
+  border-top: 1px solid #F10086;
   border-top-right-radius: 5px;
-  border-top-left-radius: 5px; */
+  border-top-left-radius: 5px;
 }
 
-
-.logo{
-  width: 25%;
-  align-items: center;
-}
-.logo img{
-  width: 60%;
-}
-.details{
+.details {
   display: flexbox;
   flex-direction: column;
+  padding-left: 1rem;
 }
-.name h3{
+
+.name h3 {
   margin-top: 0;
   margin-bottom: 0;
   text-align: left;
 }
-.role p{
+
+.role p {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .photo {
   background-color: black;
 }
@@ -61,6 +85,10 @@
   padding: 1rem;
   background-color: black;
   border-top: 1px solid grey;
+  border-bottom: 1px solid black;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+
 }
 
 .socials a {

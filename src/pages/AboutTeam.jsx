@@ -1,69 +1,49 @@
-import React from 'react'
-function AboutTeam(){
-    return <section id="team">
-    <div className="card" data-tilt="true">
+import React from "react";
 
-        <div className="title">
-            <div className="logo">
-                <img src="jnu.png" alt="JNU" />
-             </div>
-            <div className="details">
-                <div className="name">
-                    <h3>Sruthik</h3>
-                </div>
-                <div className="role">
-                    <p>Web Developer</p>
-                </div>
+import Card from "../components/Card";
+import { coreTeam } from "../components/cards";
+
+function AboutTeam() {
+    return <section id="aboutTeam">
+        <div id="coreTeam">
+            <div className="sectionTitle">
+                <h1>Core Team</h1>
             </div>
-
-        </div>
-        <div className="photo">
-            <img src="sruthik.png" alt="Sruthik" />
-        </div>
-        <div className="socials">
-            <a href="">
-                <i className="fa-brands fa-github fa-lg" style="color: #f10086;"></i>
-            </a>
-            <a href="">
-                <i className="fa-brands fa-linkedin fa-lg" style="color: #f10086;"></i>
-            </a>
-            <a href="">
-                <i className="fa-brands fa-instagram fa-lg" style="color: #f10086;"></i>
-            </a>
-        </div>
-    </div>
-    <div className="card" data-tilt="true">
-
-        <div className="title">
-            <div className="logo">
-                <img src="jnu.png" alt="JNU" />
-             </div>
-            <div className="details">
-                <div className="name">
-                    <h3>Sruthik</h3>
-                </div>
-                <div className="role">
-                    <p>Web Developer</p>
-                </div>
+            <div className="cards">
+                {
+                    coreTeam.map((person) => {
+                        return (
+                            <Card
+                                name={person.name}
+                                role={person.role}
+                                photo={person.photo}
+                            />
+                        )
+                    })
+                }
             </div>
+        </div>
+        <div id="webTeam">
+            <div className="sectionTitle">
+                <h1>Development Team</h1>
+            </div>
+            <div className="cards">
+                {
+                    webTeam.map((person) => {
+                        return (
+                            <Card
+                                name={person.name}
+                                role={person.role}
+                                photo={person.photo}
+                            />
+                        )
+                    })
+                }
+            </div>
+        </div>
+    </section>
 
-        </div>
-        <div className="photo">
-            <img src="sruthik.png" alt="Sruthik" />
-        </div>
-        <div className="socials">
-            <a href="">
-                <i className="fa-brands fa-github fa-lg" style="color: #f10086;"></i>
-            </a>
-            <a href="">
-                <i className="fa-brands fa-linkedin fa-lg" style="color: #f10086;"></i>
-            </a>
-            <a href="">
-                <i className="fa-brands fa-instagram fa-lg" style="color: #f10086;"></i>
-            </a>
-        </div>
-    </div>
-</section>
+
 }
- 
-export default AboutTeam;
+
+export default AboutTeam

@@ -49,6 +49,7 @@ function App() {
         </ParallaxLayer>
       </Parallax>
     </>
+    
   )
 }
 
