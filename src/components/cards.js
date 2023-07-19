@@ -15,20 +15,19 @@ const coreTeam = [{
     role: "Lead"
 }]
 
-const webTeam = [
-    {
-        name:"Surya",
-        role:"Lead",
-        photo:"surya"
+const webTeam = [{
+        name: "Surya",
+        role: "Lead",
+        photo: "surya"
     },
     {
-    name: "Sruthik",
-    role: "Web Developer",
-    photo:"sruthik"
+        name: "Sruthik",
+        role: "Web Developer",
+        photo: "sruthik"
 
     }
 
 ]
 
 
-export {coreTeam,webTeam}
+export { coreTeam, webTeam }
