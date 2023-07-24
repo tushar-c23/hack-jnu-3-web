@@ -13,7 +13,8 @@
     "@react-spring/parallax": "^9.7.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scroll-parallax": "^3.4.2"
+    "react-scroll-parallax": "^3.4.2",
+    "react-vanilla-tilt": "^1.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",

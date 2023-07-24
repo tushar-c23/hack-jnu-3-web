@@ -4,3 +4,85 @@
   padding: 2rem;
   text-align: center;
 }
+#textblock {
+  background-color: #101635;
+  height: 100vh;
+}
+
+#textblock-container {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+#textblock-title {
+  color: #ff00d0;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: "Helvetica Neue";
+}
+
+#textblock-content {
+  color: #ff009d;
+  font-size: 20px;
+}
+
+
+.animation, .animation_layer {
+	height: 1000px;
+}
+
+.animation {
+  display: block;
+	position: relative;
+	z-index: 10;
+}
+
+.animation_layer {
+	background-position: bottom center;
+	background-size: auto 1038px;
+	background-repeat: repeat-x;
+	width: 100%;
+	position: absolute;
+}
+.animation_layer.parallax {
+	position: fixed;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#background {
+  background-image: url(./img/Background.svg);
+}
+#layer-8 {
+  background-image: url(./img/GroupLayer8.svg);
+}
+#layer-7 {
+  background-image: url(./img/GroupLayer7.svg);
+}
+#layer-6 {
+  background-image: url(./img/GroupLayer6.svg);
+}
+#layer-5 {
+  background-image: url(./img/GroupLayer5.svg);
+}
+#layer-4 {
+  background-image: url(./img/GroupLayer4.svg);
+}
+#layer-3 {
+  background-image: url(./img/GroupLayer3.svg);
+}
+#layer-2 {
+  background-image: url(./img/GroupLayer2.svg);
+}
+#layer-1 {
+  background-image: url(./img/GroupLayer1.svg);
+}
+#layer-0 {
+  background-image: url(./img/GroupLayer0.svg);
+}
+#bg-dark{
+  background-color: #101635;
+}
