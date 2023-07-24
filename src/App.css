@@ -1,7 +1,5 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
   text-align: center;
 }
 #textblock {
@@ -85,4 +83,19 @@
 }
 #bg-dark{
   background-color: #101635;
+}
+h2{
+  width: 100%;
+}
+img{
+  width: 100%;
+}
+.imageAnimation{
+  transition: translate 1s;
+}
+.check{
+  position: fixed;
+  top:50px;
+  left:50%;
+  z-index: 1000;
 }

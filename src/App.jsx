@@ -11,47 +11,34 @@ import Prizes from './pages/Prizes'
 import Sponsors from './pages/Sponsors'
 import Timeline from './pages/Timeline'
 import { ParallaxBanner } from 'react-scroll-parallax'
+import FooterImg from './assets/FooterImg.svg'
+import ForestBack from './assets/ForestBack.svg'
+import ForestMid from './assets/ForestMid.svg'
+import ForestTop from './assets/ForestTop.svg'
+import { useRef , useState , useEffect} from 'react'
 
 
 function App() {
+  const myRef = useRef();
+  const myDivRef = useRef();
+  const [refStyle,setRefStyle] = useState({transform: `translate(0px)`});
+  const getPosition = () => {
+    console.log("Scrolled")
+    if(myRef.current){
+    let h=myRef.current.getBoundingClientRect()['y']+1500
+    if (h<0)
+    h=0
+    setRefStyle({transform: `translate(-${h}px)`})
+    console.log(myRef.current)
+    }
+  };
+  useEffect(() => {
+    myDivRef.current && myDivRef.current.addEventListener('scroll', getPosition);
+  }, []);
 
   return (
-    // <>
-    //   <Parallax pages={5} className='ParallaxBase'>
-    //     <ParallaxLayer offset={0}>
-    //       <h2 className='m-auto mt-[50vh] Text1 text-3xl'>The greatest hackathon in india</h2>
-    //     </ParallaxLayer>
-    //     <ParallaxLayer offset={0}>
-    //       <h2 className='m-auto mt-[50vh] Text2 text-3xl'>Back with a bang</h2>
-    //     </ParallaxLayer>
-    //     <ParallaxLayer offset={0}>
-    //       <Navbar></Navbar>
-    //     </ParallaxLayer>
-    //     <ParallaxLayer offset={0}>
-    //       <Home></Home>
-    //     </ParallaxLayer>
-    //     <ParallaxLayer offset={1}>
-    //       <AboutTeam></AboutTeam>
-    //     </ParallaxLayer>
-    //     <ParallaxLayer offset={2}>
-    //       <Timeline></Timeline>
-    //     </ParallaxLayer>
-    //     <ParallaxLayer offset={3}>
-    //       <Prizes></Prizes>
-    //     </ParallaxLayer>
-    //     <ParallaxLayer offset={4}>
-    //       <Sponsors></Sponsors>
-    //     </ParallaxLayer>
-    //     <ParallaxLayer offset={5}>
-    //       <FAQ></FAQ>
-    //     </ParallaxLayer>
-    //     <ParallaxLayer>
-    //       <Footer></Footer>
-    //     </ParallaxLayer>
-    //   </Parallax>
-    // </>
-    <div className="App">
-      <Parallax pages={2} style={{ top: '0', left: '0' }} className="animation">
+    <div className="App" onWheel={getPosition}>
+      <Parallax pages={5} style={{ top: '0', left: '0' }} className="animation">
         <ParallaxLayer offset={0} speed={0}>
           <div className="animation_layer parallax" id="background"></div>
         </ParallaxLayer>
@@ -93,10 +80,14 @@ function App() {
             </div>
           </div>
         </ParallaxLayer>
+        <ParallaxLayer offset={1} speed={0.1} >
+          <img src={ForestBack} alt="" ref={myRef} style={refStyle}/>
+        </ParallaxLayer>
+        <ParallaxLayer offset={1} speed={0.2} >
+          <img src={ForestMid} alt="" style={refStyle}/>
+        </ParallaxLayer>
       </Parallax>
     </div>
-
-
   )
 }
 
