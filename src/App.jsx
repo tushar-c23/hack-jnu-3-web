@@ -55,31 +55,31 @@ function App() {
         <ParallaxLayer offset={0} speed={0}>
           <div className="animation_layer parallax" id="background"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.77} style={{ top: '0' }}>
+        <ParallaxLayer offset={0} speed={0.0} style={{ top: '0' }}>
           <div className="animation_layer parallax" id="layer-8"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0}>
+        <ParallaxLayer offset={0} speed={0.05}>
           <div className="animation_layer parallax" id="layer-7"></div>
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={0.1}>
           <div className="animation_layer parallax" id="layer-6"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.1}>
+        <ParallaxLayer offset={0} speed={0.15}>
           <div className="animation_layer parallax" id="layer-5"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.1}>
+        <ParallaxLayer offset={0} speed={0.2}>
           <div className="animation_layer parallax" id="layer-4"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.1}>
+        <ParallaxLayer offset={0} speed={0.25}>
           <div className="animation_layer parallax" id="layer-3"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.2}>
+        <ParallaxLayer offset={0} speed={0.3}>
           <div className="animation_layer parallax" id="layer-2"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.3}>
+        <ParallaxLayer offset={0} speed={0.35}>
           <div className="animation_layer parallax" id="layer-1"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.35}>
+        <ParallaxLayer offset={0} speed={0.4}>
           <div className="animation_layer parallax" id="layer-0"></div>
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={0}>
