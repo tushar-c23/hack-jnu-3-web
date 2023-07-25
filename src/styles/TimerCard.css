@@ -1,0 +1,41 @@
+.timerCard{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    margin-top: 37%;
+    justify-content: center;
+}
+
+table{
+    margin: auto;
+    margin-top: 10px;
+    table-layout: fixed;
+    width: 50%;
+    justify-content: center;
+
+}
+table caption{
+    margin-bottom: 10px;
+}
+table tbody tr th{
+    background-color:black;
+    color:rgb(249, 0, 137);
+    font-size: 35px;
+    box-shadow: 0 8px 16px 0 #9e0090;
+    border-radius: 50%;
+    margin-left: auto;  
+    margin-right: auto;
+    text-align: center;
+}
+table tbody tr td{
+    font-weight: bold;
+    color:rgb(249, 0, 137);
+    padding-top: 10px;
+    margin-left: auto;  
+    margin-right: auto;
+    text-align: center;
+
+}
+

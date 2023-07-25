@@ -10,6 +10,8 @@ import Home from './pages/Home'
 import Prizes from './pages/Prizes'
 import Sponsors from './pages/Sponsors'
 import Timeline from './pages/Timeline'
+import Countdown from './components/Countdown'
+import TimerCard from './components/TimerCard'
 import { ParallaxBanner } from 'react-scroll-parallax'
 import FooterImg from './assets/FooterImg.svg'
 import ForestBack from './assets/ForestBack.svg'
@@ -71,9 +73,6 @@ function App() {
         <ParallaxLayer offset={0} speed={0.2}>
           <div className="animation_layer parallax" id="layer-4"></div>
         </ParallaxLayer>
-        {/* <ParallaxLayer offset={0} speed={0.15}>
-          <div className="animation_layer parallax" id="logo"></div>
-        </ParallaxLayer> */}
         <ParallaxLayer offset={0} speed={0.25}>
           <div className="animation_layer parallax" id="layer-3"></div>
         </ParallaxLayer>
@@ -83,11 +82,11 @@ function App() {
         <ParallaxLayer offset={0} speed={0.35}>
           <div className="animation_layer parallax" id="layer-1"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.2}>
+        <ParallaxLayer offset={0} speed={0.4}>
           <div className="animation_layer parallax" id="layer-0"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.5}>
-          <div className="animation_layer parallax" id="trees"></div>
+        <ParallaxLayer offset={0} speed={0.1}>
+          <Countdown />
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={0}>
           <div id="textblock">
