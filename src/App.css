@@ -3,7 +3,7 @@
   text-align: center;
 }
 #textblock {
-  background-color: #101635;
+  background-color: #0c0315 ;
   height: 100vh;
 }
 
@@ -50,7 +50,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/* 
 #background {
   background-image: url(./img/Background.svg);
 }
@@ -66,8 +66,15 @@
 #layer-5 {
   background-image: url(./img/GroupLayer5.svg);
 }
+
 #layer-4 {
   background-image: url(./img/GroupLayer4.svg);
+}
+#logo {
+  background-image: url(./img/Logo.svg);
+  background-position: top;
+  background-size: 80%;
+  margin-top: 7.5%;
 }
 #layer-3 {
   background-image: url(./img/GroupLayer3.svg);
@@ -80,9 +87,10 @@
 }
 #layer-0 {
   background-image: url(./img/GroupLayer0.svg);
-}
+} */
+
 #bg-dark{
-  background-color: #101635;
+  background-color: #100922 ;
 }
 h2{
   width: 100%;
@@ -99,3 +107,50 @@ img{
   left:50%;
   z-index: 1000;
 }
+#background{
+  background-image: url(./img/Background.svg);
+}
+#layer-12{
+  background-image: url(./img/MountainsLayer12.svg);
+}
+#layer-11{
+  background-image: url(./img/MountainsLayer11.svg);
+}
+#layer-10{
+  background-image: url(./img/MountainsLayer10.svg);
+}
+#layer-9{
+  background-image: url(./img/MountainsLayer9.svg);
+}
+#layer-8{
+  background-image: url(./img/MountainsLayer8.svg);
+}
+#layer-7{
+  background-image: url(./img/MountainsLayer7.svg);
+}
+#layer-6{
+  background-image: url(./img/MountainsLayer6.svg);
+}
+#layer-5{
+  background-image: url(./img/MountainsLayer5.svg);
+}
+#layer-4{
+  background-image: url(./img/MountainsLayer4.svg);
+}
+#layer-3{
+  background-image: url(./img/MountainsLayer3.svg);
+}
+#layer-2{
+  background-image: url(./img/MountainsLayer2.svg);
+}
+#layer-1{
+  background-image: url(./img/MountainsLayer1.svg);
+}
+#layer-0{
+  background-image: url(./img/MountainsLayer0.svg);
+}
+/* #trees{
+  background-image: url(./img/Trees.svg);
+  background-position: bottom;;
+  margin-right: 0;
+} */
