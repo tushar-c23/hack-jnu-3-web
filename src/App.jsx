@@ -15,6 +15,8 @@ import FooterImg from './assets/FooterImg.svg'
 import ForestBack from './assets/ForestBack.svg'
 import ForestMid from './assets/ForestMid.svg'
 import ForestTop from './assets/ForestTop.svg'
+
+
 import { useRef , useState , useEffect} from 'react'
 
 
@@ -42,7 +44,19 @@ function App() {
         <ParallaxLayer offset={0} speed={0}>
           <div className="animation_layer parallax" id="background"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.0} style={{ top: '0' }}>
+        <ParallaxLayer offset={0} speed={0.0} >
+          <div className="animation_layer parallax" id="layer-12"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.0} >
+          <div className="animation_layer parallax" id="layer-11"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.0} >
+          <div className="animation_layer parallax" id="layer-10"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.0} >
+          <div className="animation_layer parallax" id="layer-9"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.0} >
           <div className="animation_layer parallax" id="layer-8"></div>
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={0.05}>
@@ -53,10 +67,13 @@ function App() {
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={0.15}>
           <div className="animation_layer parallax" id="layer-5"></div>
-        </ParallaxLayer>
+        </ParallaxLayer> 
         <ParallaxLayer offset={0} speed={0.2}>
           <div className="animation_layer parallax" id="layer-4"></div>
         </ParallaxLayer>
+        {/* <ParallaxLayer offset={0} speed={0.15}>
+          <div className="animation_layer parallax" id="logo"></div>
+        </ParallaxLayer> */}
         <ParallaxLayer offset={0} speed={0.25}>
           <div className="animation_layer parallax" id="layer-3"></div>
         </ParallaxLayer>
@@ -66,8 +83,11 @@ function App() {
         <ParallaxLayer offset={0} speed={0.35}>
           <div className="animation_layer parallax" id="layer-1"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.4}>
+        <ParallaxLayer offset={0} speed={0.2}>
           <div className="animation_layer parallax" id="layer-0"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.5}>
+          <div className="animation_layer parallax" id="trees"></div>
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={0}>
           <div id="textblock">
