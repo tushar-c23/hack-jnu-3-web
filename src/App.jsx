@@ -98,16 +98,34 @@ function App() {
               </p>
             </div>
           </div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={0.1} >
-          <img src={ForestBack} alt="" ref={myRef} style={refStyle}/>
-        </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={0.2} >
-          <img src={ForestMid} alt="" style={refStyle}/>
-        </ParallaxLayer>
-      </Parallax>
+        </div>
+        <div className="Tree">
+          <div className="viewport">
+          <Parallax
+            translateX={["1000px", "0px"]}
+            scale={[0.5, 1]}
+            easing="easeInQuad"
+          >
+            <img src={FrontTree} className="w-full"></img>
+          </Parallax>
+          </div>
+        </div>
+      </div>
+      <div className="FooterDiv mt-[150vh]">
+      <div className="Footer">
+          <div className="viewport">
+          <Parallax
+            translateY={["400px", "0px"]}
+            scale={[2,1]}
+            easing="easeInQuad"
+          >
+            <img src={FooterImg} className="w-full"></img>
+          </Parallax>
+          </div>
+        </div>
+        </div>
     </div>
-  )
+  );
 }
 
 export default App
