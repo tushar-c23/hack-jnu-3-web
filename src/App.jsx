@@ -20,25 +20,32 @@ import FrontTree from "./assets/FrontTree.svg";
 import LeftTree from "./assets/LeftTree.svg";
 import BackRightTree from "./assets/BackRightTree.svg";
 
+import BgForestLeftL1 from './assets/BgForest/BgForestLeftL1.svg'
+import BgForestLeftL2 from './assets/BgForest/BgForestLeftL2.svg'
+import BgForestLeftL3 from './assets/BgForest/BgForestLeftL3.svg'
+import BgForestRightL1 from './assets/BgForest/BgForestRightL1.svg'
+import BgForestRightL2 from './assets/BgForest/BgForestRightL2.svg'
+import BgForestRightL3 from './assets/BgForest/BgForestRightL3.svg'
+
 import { useRef, useState, useEffect } from "react";
 
 function App() {
-  const myRef = useRef();
-  const myDivRef = useRef();
-  const [refStyle, setRefStyle] = useState({ transform: `translate(0px)` });
-  const getPosition = () => {
-    console.log("Scrolled");
-    if (myRef.current) {
-      let h = myRef.current.getBoundingClientRect()["y"] + 1500;
-      if (h < 0) h = 0;
-      setRefStyle({ transform: `translate(-${h}px)` });
-      console.log(myRef.current);
-    }
-  };
-  useEffect(() => {
-    myDivRef.current &&
-      myDivRef.current.addEventListener("scroll", getPosition);
-  }, []);
+  // const myRef = useRef();
+  // const myDivRef = useRef();
+  // const [refStyle, setRefStyle] = useState({ transform: `translate(0px)` });
+  // const getPosition = () => {
+  //   console.log("Scrolled");
+  //   if (myRef.current) {
+  //     let h = myRef.current.getBoundingClientRect()["y"] + 1500;
+  //     if (h < 0) h = 0;
+  //     setRefStyle({ transform: `translate(-${h}px)` });
+  //     console.log(myRef.current);
+  //   }
+  // };
+  // useEffect(() => {
+  //   myDivRef.current &&
+  //     myDivRef.current.addEventListener("scroll", getPosition);
+  // }, []);
 
   return (
     // <div className="App" onWheel={getPosition}>
@@ -110,9 +117,78 @@ function App() {
     //     </ParallaxLayer>
     //   </Parallax>
     // </div>
-    <div className="HomeScreen h-[800vh] mb-[100vh]">
+    <div className="HomeScreen h-[1000vh] mb-[100vh]">
       <Home />
-      <div className="h-[200vh] w-full sticky top-0"></div>
+      <div className="h-[50vh] w-full "></div>
+      <div className="BgForest">
+        <div className="Forest">
+          <div className="viewport">
+          <Parallax
+            translateX={["-600px", "0px"]}
+            opacity={[1,0.5]}
+            easing="easeInQuad"
+          >
+            <img src={BgForestLeftL1} className="w-full"></img>
+          </Parallax>
+          </div>
+        </div>
+        <div className="Forest">
+          <div className="viewport">
+          <Parallax
+            opacity={[1,0.5]}
+            translateX={["600px", "0px"]}
+            easing="easeInQuad"
+          >
+            <img src={BgForestRightL1} className="w-full"></img>
+          </Parallax>
+          </div>
+        </div>
+        <div className="Forest">
+          <div className="viewport">
+          <Parallax
+            opacity={[1,0.75]}
+            translateX={["-1400px", "0px"]}
+            easing="easeInQuad"
+          >
+            <img src={BgForestLeftL2} className="w-full"></img>
+          </Parallax>
+          </div>
+        </div>
+        <div className="Forest">
+          <div className="viewport">
+          <Parallax
+            opacity={[1,0.75]}
+            translateX={["1400px", "0px"]}
+            easing="easeInQuad"
+          >
+            <img src={BgForestRightL2} className="w-full"></img>
+          </Parallax>
+          </div>
+        </div>
+        <div className="Forest">
+          <div className="viewport">
+          <Parallax
+            opacity={[1,0.9]}
+            translateX={["-2000px", "0px"]}
+            easing="easeInQuad"
+          >
+            <img src={BgForestLeftL3} className="w-full"></img>
+          </Parallax>
+          </div>
+        </div>
+        <div className="Forest">
+          <div className="viewport">
+          <Parallax
+            opacity={[1,0.9]}
+            translateX={["2000px", "0px"]}
+            easing="easeInQuad"
+          >
+            <img src={BgForestRightL3} className="w-full"></img>
+          </Parallax>
+          </div>
+        </div>
+      </div>
+      <div className="h-[300vh]"></div>
       <div className="FootTrees">
         <div className="Tree">
           <div className="viewport">
