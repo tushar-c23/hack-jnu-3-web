@@ -1,6 +1,7 @@
 #root {
   width: 100%;
   text-align: center;
+  /* overflow-x: hidden; */
 }
 #textblock {
   background-color: #0c0315 ;
@@ -154,3 +155,25 @@ img{
   background-position: bottom;;
   margin-right: 0;
 } */
+
+.HomeScreen{
+  width: 100%;
+  min-height: 100vh;
+}
+.FootTrees{
+  position: sticky;
+  top: 0;
+  max-width: 100%;
+  width: 100%;
+}
+.Tree{
+  position: absolute;
+  height: 100vh;
+  max-width: 100%;
+  width: 100%;
+  bottom: 0;
+}
+.viewport{
+  width: 100%;
+  overflow-x: hidden;
+}
