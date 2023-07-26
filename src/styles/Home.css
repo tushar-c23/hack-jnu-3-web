@@ -1,0 +1,12 @@
+.Home{
+    height: 110vh;
+    width: 100%;
+}
+.HomeBanner{
+    min-height: 100%;
+    width: 100%;
+    /* aspect-ratio: 45/32; */
+}
+.ParallaxBannerLayer{
+    background-position: center top;
+}
