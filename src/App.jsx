@@ -148,6 +148,19 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="FooterDiv mt-[150vh]">
+      <div className="Footer">
+          <div className="viewport">
+          <Parallax
+            translateY={["400px", "0px"]}
+            scale={[2,1]}
+            easing="easeInQuad"
+          >
+            <img src={FooterImg} className="w-full"></img>
+          </Parallax>
+          </div>
+        </div>
+        </div>
     </div>
   );
 }

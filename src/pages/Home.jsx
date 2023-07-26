@@ -14,23 +14,54 @@ import MountainsLayer9 from '../img/MountainsLayer9.svg'
 import MountainsLayer10 from '../img/MountainsLayer10.svg'
 import MountainsLayer11 from '../img/MountainsLayer11.svg'
 import MountainsLayer12 from '../img/MountainsLayer12.svg'
+import Background from '../img/Background.svg'
 
 const Home = () => {
     return ( <div className='Home'>
         <ParallaxBanner className='HomeBanner'>
-            <ParallaxBannerLayer className='ParallaxBannerLayer' image={MountainsLayer12} speed={-52}></ParallaxBannerLayer>
-            <ParallaxBannerLayer className='ParallaxBannerLayer' image={MountainsLayer11} speed={-48}></ParallaxBannerLayer>
-            <ParallaxBannerLayer className='ParallaxBannerLayer' image={MountainsLayer10} speed={-40}></ParallaxBannerLayer>
-            <ParallaxBannerLayer className='ParallaxBannerLayer' image={MountainsLayer9} speed={-36}></ParallaxBannerLayer>
-            <ParallaxBannerLayer className='ParallaxBannerLayer' image={MountainsLayer8} speed={-32}></ParallaxBannerLayer>
-            <ParallaxBannerLayer className='ParallaxBannerLayer' image={MountainsLayer7} speed={-28}></ParallaxBannerLayer>
-            <ParallaxBannerLayer className='ParallaxBannerLayer' image={MountainsLayer6} speed={-24}></ParallaxBannerLayer>
-            <ParallaxBannerLayer className='ParallaxBannerLayer' image={MountainsLayer5} speed={-20}></ParallaxBannerLayer>
-            <ParallaxBannerLayer className='ParallaxBannerLayer' image={MountainsLayer4} speed={-16}></ParallaxBannerLayer>
-            <ParallaxBannerLayer className='ParallaxBannerLayer' image={MountainsLayer3} speed={-12}></ParallaxBannerLayer>
-            <ParallaxBannerLayer className='ParallaxBannerLayer' image={MountainsLayer2} speed={-8}></ParallaxBannerLayer>
-            <ParallaxBannerLayer className='ParallaxBannerLayer' image={MountainsLayer1} speed={-4}></ParallaxBannerLayer>
-            <ParallaxBannerLayer className='ParallaxBannerLayer' image={MountainsLayer0} speed={0}></ParallaxBannerLayer>
+            <ParallaxBannerLayer className='ParallaxBannerLayer' speed={0}>
+                <img src={Background} alt="" className='MountainLayer'/>
+            </ParallaxBannerLayer>
+            <ParallaxBannerLayer className='ParallaxBannerLayer' speed={-15}>
+                <img src={MountainsLayer12} alt="" className='MountainLayer'/>
+            </ParallaxBannerLayer>
+            <ParallaxBannerLayer className='ParallaxBannerLayer' speed={-15}>
+            <img src={MountainsLayer11} alt="" className='MountainLayer'/>
+            </ParallaxBannerLayer>
+            <ParallaxBannerLayer className='ParallaxBannerLayer' speed={-12}>
+            <img src={MountainsLayer10} alt="" className='MountainLayer'/>
+            </ParallaxBannerLayer>
+            <ParallaxBannerLayer className='ParallaxBannerLayer' speed={-9}>
+            <img src={MountainsLayer9} alt="" className='MountainLayer'/>
+            </ParallaxBannerLayer>
+            <ParallaxBannerLayer className='ParallaxBannerLayer' speed={-6}>
+            <img src={MountainsLayer8} alt="" className='MountainLayer'/>
+            </ParallaxBannerLayer>
+            <ParallaxBannerLayer className='ParallaxBannerLayer' speed={-3}>
+            <img src={MountainsLayer7} alt="" className='MountainLayer'/>
+            </ParallaxBannerLayer>
+            <ParallaxBannerLayer className='ParallaxBannerLayer' speed={0}>
+            <img src={MountainsLayer6} alt="" className='MountainLayer'/>
+            </ParallaxBannerLayer>
+            <ParallaxBannerLayer className='ParallaxBannerLayer' speed={3}>
+            <img src={MountainsLayer5} alt="" className='MountainLayer'/>
+            </ParallaxBannerLayer>
+            <ParallaxBannerLayer className='ParallaxBannerLayer' speed={6}>
+            <img src={MountainsLayer4} alt="" className='MountainLayer'/>
+            </ParallaxBannerLayer>
+            <ParallaxBannerLayer className='ParallaxBannerLayer' speed={9}>
+            <img src={MountainsLayer3} alt="" className='MountainLayer'/>
+            </ParallaxBannerLayer>
+            <ParallaxBannerLayer className='ParallaxBannerLayer' speed={12}>
+            <img src={MountainsLayer2} alt="" className='MountainLayer'/>
+            </ParallaxBannerLayer>
+            <ParallaxBannerLayer className='ParallaxBannerLayer' speed={15}>
+            <img src={MountainsLayer1} alt="" className='MountainLayer'/>
+            </ParallaxBannerLayer>
+            <ParallaxBannerLayer className='ParallaxBannerLayer' speed={18}>
+            <img src={MountainsLayer0} alt="" className='MountainLayer'/>
+            <div className="spaceFiller"></div>
+            </ParallaxBannerLayer>
         </ParallaxBanner>
     </div> );
 }

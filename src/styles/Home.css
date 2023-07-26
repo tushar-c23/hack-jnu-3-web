@@ -1,5 +1,5 @@
 .Home{
-    height: 110vh;
+    height: 100vh;
     width: 100%;
 }
 .HomeBanner{
@@ -9,4 +9,13 @@
 }
 .ParallaxBannerLayer{
     background-position: center top;
+}
+.ParallaxBannerLayer img{
+    width: 100%;
+}
+.spaceFiller{
+    width: 100%;
+    height: 100vh;
+    background-color: #100A25;
+    background-image: linear-gradient(to right, #100819 , #100A25);
 }

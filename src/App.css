@@ -1,6 +1,8 @@
 #root {
   width: 100%;
   text-align: center;
+  background-color: #11051D;
+  background-image: linear-gradient(to bottom right , #100819 , #100A25,#11051D, #2F1949);
   /* overflow-x: hidden; */
 }
 #textblock {
@@ -173,7 +175,22 @@ img{
   width: 100%;
   bottom: 0;
 }
+.FooterDiv{
+  
+  position: sticky;
+  top: 0;
+  max-width: 100%;
+  width: 100%;
+}
+.Footer{
+  position: absolute;
+  height: 100vh;
+  max-width: 100%;
+  width: 100%;
+  bottom: 0;
+
+}
 .viewport{
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
