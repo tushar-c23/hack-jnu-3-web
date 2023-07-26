@@ -194,3 +194,16 @@ img{
   width: 100%;
   overflow: hidden;
 }
+
+.BgForest{
+  position: sticky;
+  top:0;
+  width: 100%;
+}
+.Forest{
+  position: absolute;
+  height: 100vh;
+  max-width: 100%;
+  width: 100%;
+  top: 0;
+}
