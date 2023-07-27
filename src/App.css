@@ -3,6 +3,7 @@
   text-align: center;
   background-color: #11051D;
   background-image: linear-gradient(to bottom right , #100819 , #100A25,#11051D, #2F1949);
+  /* overflow-x: hidden; */
 }
 #textblock {
   background-color: #0c0315 ;
@@ -151,6 +152,11 @@ img{
 #layer-0{
   background-image: url(./img/MountainsLayer0.svg);
 }
+/* #trees{
+  background-image: url(./img/Trees.svg);
+  background-position: bottom;;
+  margin-right: 0;
+} */
 
 .HomeScreen{
   width: 100%;
@@ -169,7 +175,35 @@ img{
   width: 100%;
   bottom: 0;
 }
+.FooterDiv{
+  
+  position: sticky;
+  top: 0;
+  max-width: 100%;
+  width: 100%;
+}
+.Footer{
+  position: absolute;
+  height: 100vh;
+  max-width: 100%;
+  width: 100%;
+  bottom: 0;
+
+}
 .viewport{
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.BgForest{
+  position: sticky;
+  top:0;
+  width: 100%;
+}
+.Forest{
+  position: absolute;
+  height: 100vh;
+  max-width: 100%;
+  width: 100%;
+  top: 0;
 }
