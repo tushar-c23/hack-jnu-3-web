@@ -3,207 +3,32 @@
   text-align: center;
   background-color: #11051D;
   background-image: linear-gradient(to bottom right , #100819 , #100A25,#11051D, #2F1949);
-  /* overflow-x: hidden; */
-}
-#textblock {
-  background-color: #0c0315 ;
-  height: 100vh;
-}
-
-#textblock-container {
-  width: 50%;
-  margin: 0 auto;
-  padding-top: 70px;
-}
-
-#textblock-title {
-  color: #ff00d0;
-  font-size: 35px;
-  font-weight: 600;
-  font-family: "Helvetica Neue";
-}
-
-#textblock-content {
-  color: #ff009d;
-  font-size: 20px;
-}
-
-
-.animation, .animation_layer {
-	height: 1000px;
-}
-
-.animation {
-  display: block;
-	position: relative;
-	z-index: 10;
-}
-
-.animation_layer {
-	background-position: bottom center;
-	background-size: auto 1038px;
-	background-repeat: repeat-x;
-	width: 100%;
-	position: absolute;
-}
-.animation_layer.parallax {
-	position: fixed;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-/* 
-#background {
-  background-image: url(./img/Background.svg);
-}
-#layer-8 {
-  background-image: url(./img/GroupLayer8.svg);
-}
-#layer-7 {
-  background-image: url(./img/GroupLayer7.svg);
-}
-#layer-6 {
-  background-image: url(./img/GroupLayer6.svg);
-}
-#layer-5 {
-  background-image: url(./img/GroupLayer5.svg);
-}
-
-#layer-4 {
-  background-image: url(./img/GroupLayer4.svg);
-}
-#logo {
-  background-image: url(./img/Logo.svg);
-  background-position: top;
-  background-size: 80%;
-  margin-top: 7.5%;
-}
-#layer-3 {
-  background-image: url(./img/GroupLayer3.svg);
-}
-#layer-2 {
-  background-image: url(./img/GroupLayer2.svg);
-}
-#layer-1 {
-  background-image: url(./img/GroupLayer1.svg);
-}
-#layer-0 {
-  background-image: url(./img/GroupLayer0.svg);
-} */
-
-#bg-dark{
-  background-color: #100922 ;
-}
-h2{
-  width: 100%;
 }
 img{
   width: 100%;
 }
-.imageAnimation{
-  transition: translate 1s;
-}
-.check{
-  position: fixed;
-  top:50px;
-  left:50%;
-  z-index: 1000;
-}
-#background{
-  background-image: url(./img/Background.svg);
-}
-#layer-12{
-  background-image: url(./img/MountainsLayer12.svg);
-}
-#layer-11{
-  background-image: url(./img/MountainsLayer11.svg);
-}
-#layer-10{
-  background-image: url(./img/MountainsLayer10.svg);
-}
-#layer-9{
-  background-image: url(./img/MountainsLayer9.svg);
-}
-#layer-8{
-  background-image: url(./img/MountainsLayer8.svg);
-}
-#layer-7{
-  background-image: url(./img/MountainsLayer7.svg);
-}
-#layer-6{
-  background-image: url(./img/MountainsLayer6.svg);
-}
-#layer-5{
-  background-image: url(./img/MountainsLayer5.svg);
-}
-#layer-4{
-  background-image: url(./img/MountainsLayer4.svg);
-}
-#layer-3{
-  background-image: url(./img/MountainsLayer3.svg);
-}
-#layer-2{
-  background-image: url(./img/MountainsLayer2.svg);
-}
-#layer-1{
-  background-image: url(./img/MountainsLayer1.svg);
-}
-#layer-0{
-  background-image: url(./img/MountainsLayer0.svg);
-}
-/* #trees{
-  background-image: url(./img/Trees.svg);
-  background-position: bottom;;
-  margin-right: 0;
-} */
-
-.HomeScreen{
-  width: 100%;
-  min-height: 100vh;
-}
-.FootTrees{
-  position: sticky;
-  top: 0;
-  max-width: 100%;
-  width: 100%;
-}
-.Tree{
-  position: absolute;
+.pages1{
   height: 100vh;
-  max-width: 100%;
   width: 100%;
-  bottom: 0;
+  max-width: 100%;
 }
-.FooterDiv{
-  
+.ParaDiv{
   position: sticky;
-  top: 0;
-  max-width: 100%;
+  top: 100vh;
   width: 100%;
-}
-.Footer{
-  position: absolute;
-  height: 100vh;
-  max-width: 100%;
-  width: 100%;
-  bottom: 0;
-
 }
 .viewport{
   width: 100%;
   overflow: hidden;
+  position: absolute;
+  bottom: 0;
+}
+.SpaceFiller{
+  height: 50vh;
+  width: 100%;
 }
 
-.BgForest{
-  position: sticky;
-  top:0;
-  width: 100%;
-}
-.Forest{
-  position: absolute;
-  height: 100vh;
-  max-width: 100%;
-  width: 100%;
-  top: 0;
+#AppHome {
+  scroll-snap-type: both mandatory;
+  scroll-snap-align: center;
 }
