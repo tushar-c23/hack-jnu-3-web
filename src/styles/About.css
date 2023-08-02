@@ -1,3 +1,7 @@
+.About{
+    z-index: 1000;
+    overflow: hidden;
+}
 .About .Title{
     text-align: center;
     background-color: pink;
@@ -22,4 +26,10 @@
 .About .TextContent .TextContainer{
     display: flex;
     flex-wrap: wrap;
+}
+.About h2{
+    font-size: 25px;
+}
+.TextBox{
+    overflow: hidden;
 }
