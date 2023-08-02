@@ -7,10 +7,14 @@
     height: 0;
     width: 100%;
     position: relative;
+    z-index: -100;
 }
 .ParallaxTarget{
     position: absolute;
     bottom: 0;
+}
+.ParallaxDiv{
+    z-index: -100;
 }
 .DistantForestTarget{
     height:150vh;

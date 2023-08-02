@@ -56,7 +56,10 @@ function App() {
     const HeadingObserver = new IntersectionObserver(HeadingHandler,{
       threshold:0.5
     })
-    const ContentObserver = new IntersectionObserver(ContentHandler)
+    const ContentObserver = new IntersectionObserver(ContentHandler,{
+      threshold:0,
+      rootMargin:"-200px"
+    })
 
     NavObserver.observe(LandingRef.current)
     HeadingObserver.observe(AboutRef.current)
@@ -64,6 +67,17 @@ function App() {
     HeadingObserver.observe(SponsorsRef.current)
     HeadingObserver.observe(PrizesRef.current)
     HeadingObserver.observe(FAQRef.current)
+
+    const content = document.querySelectorAll('.animatedContent')
+
+    console.log(content)
+    content.forEach((contentEntry)=>{
+      ContentObserver.observe(contentEntry)
+      console.log(contentEntry)
+    }
+    )
+    console.log(ContentObserver)
+
   },[controller])
 
   const NavHandler=function(entries){
@@ -81,7 +95,12 @@ function App() {
     else if(entries[0].target.id==="FAQ")
     setHeadingNumber(4)
   }
-  const ContentHandler=function(entries){}
+  const ContentHandler=function(entries){
+    console.log(entries)
+    entries.map((entry)=>{
+      entry.target.classList.toggle("show",entry.isIntersecting)
+    })
+  }
 
   return (
     <>
