@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import './TimerCard.css'
 function TimerCard(props) {
@@ -8,19 +9,19 @@ function TimerCard(props) {
        
         
         <div className="timerCards">
-        <div class="timerCard">
+        <div className="timerCard">
             <h2>{props.days}</h2>
             <h4>DAYS</h4>
         </div>
-        <div class="timerCard">
+        <div className="timerCard">
             <h2>{props.hours}</h2>
             <h4>HOURS</h4>
         </div>
-        <div class="timerCard">
+        <div className="timerCard">
             <h2>{props.minutes}</h2>
             <h4>MINUTES</h4>
         </div>
-        <div class="timerCard">
+        <div className="timerCard">
             <h2>{props.seconds}</h2>
             <h4>SECONDS</h4>
         </div>
