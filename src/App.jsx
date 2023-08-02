@@ -21,7 +21,7 @@ import FooterParallax from "./parallaxes/FooterParallax";
 import './styles/Parallaxes.css'
 
 function App() {
-
+  // Parallax variables here
   const DistantForestParallaxRef = useRef();
   const [DistantForestTarget,setDistantForestTarget]=useState(null);
   const FooterTreesParallaxRef = useRef();
@@ -31,23 +31,69 @@ function App() {
   const [started,setStarted]=useState(0);
   const controller = new useParallaxController();
 
+  // Intersection observer Refs here
+  const LandingRef=useRef()
+  const AboutRef=useRef()
+  const TimelineRef=useRef()
+  const SponsorsRef=useRef()
+  const PrizesRef=useRef()
+  const FAQRef=useRef()
+  const FooterRef=useRef()
+
+  const [headingNumber,setHeadingNumber]=useState(0)
+
   useEffect(()=>{
+    // Setting Parallax target refs here
     setDistantForestTarget(DistantForestParallaxRef.current)
     setFooterTreesTarget(FooterTreesParallaxRef.current)
     setFooterParallaxTarget(FooterParallaxRef.current)
-    console.log(controller.getElements())
     setStarted(1)
     controller.update()
+
+    // Intersection Observers here
+
+    const NavObserver = new IntersectionObserver(NavHandler)
+    const HeadingObserver = new IntersectionObserver(HeadingHandler,{
+      threshold:0.5
+    })
+    const ContentObserver = new IntersectionObserver(ContentHandler)
+
+    NavObserver.observe(LandingRef.current)
+    HeadingObserver.observe(AboutRef.current)
+    HeadingObserver.observe(TimelineRef.current)
+    HeadingObserver.observe(SponsorsRef.current)
+    HeadingObserver.observe(PrizesRef.current)
+    HeadingObserver.observe(FAQRef.current)
   },[controller])
+
+  const NavHandler=function(entries){
+    document.getElementById('NavBar').classList.toggle("show",!entries[0].isIntersecting)
+  }
+  const HeadingHandler=function(entries){
+    if(entries[0].target.id==="About")
+    setHeadingNumber(0)
+    else if(entries[0].target.id==="Timeline")
+    setHeadingNumber(1)
+    else if(entries[0].target.id==="Prizes")
+    setHeadingNumber(2)
+    else if(entries[0].target.id==="Sponsors")
+    setHeadingNumber(3)
+    else if(entries[0].target.id==="FAQ")
+    setHeadingNumber(4)
+  }
+  const ContentHandler=function(entries){}
 
   return (
     <>
     <div className="App" id="AppHome">
-      <section className="Home pages1">
+      <section className="Home pages1" ref={LandingRef} id="Home">
       <Home />
       </section>
+      <div className="NavBar" id="NavBar">
+      <Navbar current={headingNumber} ></Navbar>
+      </div>
       <div className="SpaceFiller"></div>
-      <section className="About pages1">
+      <section className="About pages1" ref={AboutRef} id="About">
       <AboutHackJNU></AboutHackJNU>
       </section>
       <div className="SpaceFiller"></div>
@@ -59,13 +105,12 @@ function App() {
       <div className="ParallaxTargetContainer">
         <div className="DistantForestTarget ParallaxTarget" ref={DistantForestParallaxRef}></div>
       </div>
-      <div className="SpaceFiller"></div>
-      <section className="Timeline pages1">
+      <section className="Timeline pages1" ref={TimelineRef} id="Timeline">
         <Timeline></Timeline>
       </section>
       <div className="SpaceFiller"></div>
       <div className="SpaceFiller"></div>
-      <section className="Prizes pages1">
+      <section className="Prizes pages1" ref={PrizesRef} id="Prizes">
         <Prizes></Prizes>
       </section>
       <section className="ParallaxStarter FooterTrees">
@@ -77,7 +122,7 @@ function App() {
         <div className="FooterTreesTarget ParallaxTarget" ref={FooterTreesParallaxRef} ></div>
       </div>
       <div className="SpaceFiller"></div>
-      <section className="Sponsors pages1">
+      <section className="Sponsors pages1" ref={SponsorsRef} id="Sponsors">
         <Sponsors></Sponsors>
       </section>
       <div className="SpaceFiller"></div>
@@ -90,11 +135,12 @@ function App() {
         <div className="FooterParallaxTarget ParallaxTarget" ref={FooterParallaxRef}></div>
       </div>
       <div className="SpaceFiller"></div>
-      <section className="FAQ pages1">
+      <section className="FAQ pages1" ref={FAQRef} id="FAQ">
         <FAQ></FAQ>
       </section>
+      <div className="SpaceFiller"></div>
     </div>
-    <div className="h-[50vh] bg-black">
+    <div className="h-[50vh] bg-black" ref={FooterRef} id="Footer">
       <Footer></Footer>
     </div>
     </>
