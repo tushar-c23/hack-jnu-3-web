@@ -31,6 +31,7 @@ const FooterTrees = (props) => {
       </Parallax>
       <Parallax
         translateX={["1000px", "0px"]}
+        translateY={["300px", "100px"]}
         scale={[0.65, 1]}
         easing="easeInQuad"
         className="Parallax"
