@@ -1,25 +1,11 @@
-.About .Title{
-    text-align: center;
-    background-color: pink;
-    border-radius: 50px;
-    height: 48px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+.card-body{
+    background-color: aqua;
 }
-.About .Title p{
-    font-size: large;
+.card{
+    border: 3px solid white;
+
 }
-.About .TextContent{
-    text-align: center;
-    display: flex;
-}
-.About .TextContent .TextBox{
-    width: 50%;
-    display: flex;
-    height: 50%;
-}
-.About .TextContent .TextContainer{
-    display: flex;
-    flex-wrap: wrap;
+.card-body:hover{
+    background: white;
+    border: 3px solid aqua;
 }
