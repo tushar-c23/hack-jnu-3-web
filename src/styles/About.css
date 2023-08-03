@@ -1,3 +1,6 @@
+
+.card-body{
+    background-color: aqua;
 .About{
     z-index: 1000;
     overflow: hidden;
@@ -11,12 +14,13 @@
     display: flex;
     align-items: center;
 }
-.About .Title p{
-    font-size: large;
+.card{
+    border: 3px solid white;
+
 }
-.About .TextContent{
-    text-align: center;
-    display: flex;
+.card-body:hover{
+    background: white;
+    border: 3px solid aqua;
 }
 .About .TextContent .TextBox{
     width: 50%;
@@ -32,4 +36,4 @@
 }
 .TextBox{
     overflow: hidden;
-}
+  }

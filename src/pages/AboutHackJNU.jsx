@@ -2,31 +2,50 @@ import "../styles/About.css";
 
 const AboutHackJNU = () => {
   return (
-    <div className="w-full h-full mt-100px">
-      <div className="Title mx-auto w-1/3 h-12">
-        <p>About Hack JNU</p>
+    <div>
+      <div className="card" style={{ marginBottom: "50px" }}>
+        <div class="card-body">
+          <h5 class="card-title">HACK JNU 3.0</h5>
+          <p class="card-text">India's largest Hackathon</p>
+        </div>
       </div>
-      <div className="TextContent flex w-5/6 mx-auto h-5/6 animatedContent">
-        <div className="flex flex-col w-1/2 p-2">
-          <h2>What is hackjnu</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quam exercitationem delectus praesentium aspernatur sequi error animi! Similique quidem dignissimos saepe praesentium, delectus, quas ad iure non, sit recusandae unde.</p>
-        </div>
-        <div className="flex  w-1/2 TextContainer">
-          <div className="flex flex-col w-1/2 TextBox">
-          <h2>Who can participate</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quam exercitationem delectus praesentium aspernatur sequi error animi! Similique quidem dignissimos saepe praesentium, delectus, quas ad iure non, sit recusandae unde.</p>
+
+      {/* for down*/}
+      <div class="card-group ">
+        <div class="card my-3 mx-5" style={{ borderRadius: "5px" }}>
+          <div class="card-body">
+            <h5 class="card-title">WHAT ?</h5>
+            <p class="card-text" style={{ marginTop: "30px",marginBottom:"10px" }}>
+              India's largest hackathon organised by jnu where innovators are
+              invited to show their talent and win rewards.
+            </p>
+            <div className="btn btn-primary">Register</div>
           </div>
-          <div className="flex flex-col w-1/2 TextBox">
-          <h2>How will it be held</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quam exercitationem delectus praesentium aspernatur sequi error animi! Similique quidem dignissimos saepe praesentium, delectus, quas ad iure non, sit recusandae unde.</p>
         </div>
-          <div className="flex flex-col w-1/2 TextBox">
-          <h2>When will it be held</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quam exercitationem delectus praesentium aspernatur sequi error animi! Similique quidem dignissimos saepe praesentium, delectus, quas ad iure non, sit recusandae unde.</p>
+        <div class="card my-3 mx-5" style={{ borderRadius: "5px" }}>
+          <div class="card-body">
+            <h5 class="card-title">WHERE ?</h5>
+            <p class="card-text" style={{ marginTop: "30px",marginBottom:"55px" }}>
+              Convention Centre Jawaharlal Nehru University, New Delhi
+            </p>
+            <div className="btn btn-primary">Location</div>
+
+          </div>
         </div>
-          <div className="flex flex-col w-1/2 TextBox">
-          <h2>Where will it be held</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quam exercitationem delectus praesentium aspernatur sequi error animi! Similique quidem dignissimos saepe praesentium, delectus, quas ad iure non, sit recusandae unde.</p>
+        <div class="card my-3 mx-5" style={{ borderRadius: "5px" }}>
+          <div class="card-body">
+            <h5 class="card-title">HOW ?</h5>
+            <p class="card-text" style={{ marginTop: "30px" }}>
+              By registering on devfolio you can participate.
+            </p>
+          </div>
+        </div>
+        <div class="card my-3 mx-5" style={{ borderRadius: "5px" }}>
+          <div class="card-body">
+            <h5 class="card-title">WHO ?</h5>
+            <p class="card-text" style={{ marginTop: "30px" }}>
+              Any college student can participate.
+            </p>
           </div>
         </div>
       </div>
