@@ -32,3 +32,13 @@ img{
   scroll-snap-type: both mandatory;
   scroll-snap-align: center;
 }
+
+.animatedContent{
+  opacity: 0;
+  transition: 300ms;
+  transform: translateX(90%);
+}
+.animatedContent.show{
+  opacity: 1;
+  transform: translateX(0);
+}
