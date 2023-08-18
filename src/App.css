@@ -33,7 +33,7 @@ img{
   scroll-snap-align: center;
 }
 
-.animatedContent{
+/* .animatedContent{
   opacity: 0;
   transition: 300ms;
   transform: translateX(90%);
@@ -41,4 +41,4 @@ img{
 .animatedContent.show{
   opacity: 1;
   transform: translateX(0);
-}
+} */

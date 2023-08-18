@@ -16,7 +16,7 @@ import MountainsLayer11 from "../img/MountainsLayer11.svg";
 import MountainsLayer12 from "../img/MountainsLayer12.svg";
 import Background from "../img/Background.svg";
 
-import TimerCard from '../components/TimerCard.jsx'
+import TimerCard from '../components/Countdown'
 
 const Home = () => {
   return (
@@ -53,7 +53,7 @@ const Home = () => {
           <img src={MountainsLayer4} alt="" className="MountainLayer mt-8" />
         </ParallaxBannerLayer>
         <ParallaxBannerLayer className="ParallaxBannerLayer" speed={-10}>
-          <div className="h-[65vh]"></div>
+          <div className="h-[67vh]"></div>
           <TimerCard days={10} hours={20} minutes={10} second={5}></TimerCard>
         </ParallaxBannerLayer>
         <ParallaxBannerLayer className="ParallaxBannerLayer" speed={15}>

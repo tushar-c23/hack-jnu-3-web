@@ -1,10 +1,10 @@
-import React from "react";
+// import React from "react";
 import { useState, useEffect } from "react";
 import TimerCard from "./TimerCard";
 
 function Countdown(){
 
-    const endTime= new Date('August 15, 2023 12:00:00').getTime()
+    const endTime= new Date('October 14, 2023 12:00:00').getTime()
     const [currentTime,setCurrentTime]=useState(new Date().getTime())
     const gap=endTime-currentTime 
 
@@ -24,7 +24,7 @@ function Countdown(){
         },1000)
     },[currentTime])
 
-    if(remainingDays===0 && remainingHours===0 &&remainingMinutes===0 && remainingSeconds===0){
+    if(gap<=0){
         return <div style={{backgroundColor:"black"}}>
             <h2 style={{color:"pink"}}>Hacking Began!</h2>
         </div>
