@@ -27,14 +27,14 @@
     display: flex;
 }
 .NavBox{
-    background-color: pink;
+    background-color: #836090;
     height: 80px;
     width: max(20%,250px);
 }
 .triangle{
 width: 0;
 height: 0;
-border-top: 80px solid pink;
+border-top: 80px solid #836090;
 border-right: 80px solid transparent;
 }
 .NavTitleBoxSlide{
@@ -47,7 +47,7 @@ border-right: 80px solid transparent;
     transition: 1s;
 }
 .NavTitleBox{
-    background-color: rgb(255, 192, 249);
+    background-color: #402659;
     height: 60px;
     width: auto;
     min-width: 150px;
@@ -68,7 +68,7 @@ border-right: 80px solid transparent;
 .trianglesmol{
 width: 0;
 height: 0;
-border-top: 60px solid rgb(255, 192, 249);
+border-top: 60px solid #402659;
 border-right: 60px solid transparent;
 }
 .NavBar .NavBox .logo{

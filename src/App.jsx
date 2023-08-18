@@ -57,8 +57,8 @@ function App() {
       threshold:0.5
     })
     const ContentObserver = new IntersectionObserver(ContentHandler,{
-      threshold:0,
-      rootMargin:"-200px"
+      threshold:0.5,
+      rootMargin:"-100px"
     })
 
     NavObserver.observe(LandingRef.current)
@@ -111,11 +111,11 @@ function App() {
       <div className="NavBar" id="NavBar">
       <Navbar current={headingNumber} ></Navbar>
       </div>
-      <div className="SpaceFiller"></div>
+      <div className="h-[30vh]"></div>
       <section className="About pages1" ref={AboutRef} id="About">
       <AboutHackJNU></AboutHackJNU>
       </section>
-      <div className="SpaceFiller"></div>
+      <div className="h-[20vh]"></div>
       <section className="ParallaxStarter DistantForest">
         <div className="ParallaxDiv">
           <DistantForest targetElement={DistantForestTarget} setStarted={setStarted} started={started}/>
@@ -127,7 +127,6 @@ function App() {
       <section className="Timeline pages1" ref={TimelineRef} id="Timeline">
         <Timeline></Timeline>
       </section>
-      <div className="SpaceFiller"></div>
       <div className="SpaceFiller"></div>
       <section className="Prizes pages1" ref={PrizesRef} id="Prizes">
         <Prizes></Prizes>

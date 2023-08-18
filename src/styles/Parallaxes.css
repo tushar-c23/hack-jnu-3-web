@@ -1,20 +1,31 @@
+*{
+    z-index: 1;
+}
+
 .ParallaxStarter{
     height: 0;
     position: sticky;
     top: 100vh;
+    z-index: 0;
 }
 .ParallaxTargetContainer{
     height: 0;
     width: 100%;
     position: relative;
-    z-index: -100;
+    z-index: 0;
 }
 .ParallaxTarget{
     position: absolute;
     bottom: 0;
 }
 .ParallaxDiv{
-    z-index: -100;
+    z-index: 0;
+}
+.Parallax{
+    z-index: 0;
+}
+.Parallax img{
+    z-index: 0;
 }
 .DistantForestTarget{
     height:150vh;

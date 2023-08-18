@@ -1,26 +1,19 @@
 
 .card-body{
-    background-color: aqua;
+    background-color: #3C5473;
+}
 .About{
     z-index: 1000;
     overflow: hidden;
 }
-.About .Title{
-    text-align: center;
-    background-color: pink;
-    border-radius: 50px;
-    height: 48px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
 .card{
-    border: 3px solid white;
-
+    border: 3px solid #F5BA9D;
+    margin: 0 !important;
+    
 }
 .card-body:hover{
-    background: white;
-    border: 3px solid aqua;
+    background: #788698;
+    border: 3px solid #3C5473;
 }
 .About .TextContent .TextBox{
     width: 50%;
@@ -37,3 +30,34 @@
 .TextBox{
     overflow: hidden;
   }
+.card-title{
+    font-size: 36px;
+    font-family: fantasy;
+}
+.card-title .heavy{
+    font-size: 54px;
+    font-weight: bold;
+    color: antiquewhite;
+}
+.cardset-body{
+    align-items: stretch;
+    justify-content: center;
+}
+.cardset{
+    align-items: stretch;
+    justify-content: stretch;
+}
+.cardSpace{
+    padding: 10px;
+}
+.cardset-body.animatedContent .card-text{
+    opacity: 0;
+    transition: 500ms;
+}
+.cardset-body.animatedContent.show .card-text{
+    opacity: 1;
+}
+.card-text{
+    font-size: 22px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
