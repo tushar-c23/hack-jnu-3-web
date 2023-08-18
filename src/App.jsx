@@ -115,7 +115,7 @@ function App() {
       <section className="About pages1" ref={AboutRef} id="About">
       <AboutHackJNU></AboutHackJNU>
       </section>
-      <div className="h-[20vh]"></div>
+      <div className="h-[10vh]"></div>
       <section className="ParallaxStarter DistantForest">
         <div className="ParallaxDiv">
           <DistantForest targetElement={DistantForestTarget} setStarted={setStarted} started={started}/>

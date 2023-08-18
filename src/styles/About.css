@@ -51,13 +51,14 @@
     padding: 10px;
 }
 .cardset-body.animatedContent .card-text{
+    font-size: 10px;
     opacity: 0;
     transition: 500ms;
 }
 .cardset-body.animatedContent.show .card-text{
+    font-size: 22px;
     opacity: 1;
 }
 .card-text{
-    font-size: 22px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

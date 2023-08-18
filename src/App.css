@@ -4,6 +4,10 @@
   background-color: #11051D;
   background-image: linear-gradient(to bottom right , #100819 , #100A25,#11051D, #2F1949);
 }
+body{
+  min-width: 800px!important;
+  max-width: 100%;
+}
 img{
   width: 100%;
 }
