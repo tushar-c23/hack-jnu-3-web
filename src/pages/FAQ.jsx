@@ -1,8 +1,4 @@
-// const FAQ = () => {
-//     return ( <div>
 
-//     </div> );
-// }
 import { useState } from "react";
 import React from "react";
 import { faqlist } from "../components/faq";
