@@ -1,11 +1,23 @@
-.bg{
+ .bg1{
    
    
      position: relative;
-     height: 500px;
-     width: 300px;
-    top: 480px;
-    left: -60px; 
+     /* height: 500px;
+     width: 300px; */
+    top: 783px;
+    left: 670px; 
+    
+
+} 
+
+.bg2{
+   
+   
+    position: relative;
+    /* height: 500px;
+    width: 300px; */
+   top: 370px;
+   left: 860px; 
    
 
 }
@@ -18,9 +30,9 @@
     align-items: center;
     /* padding-left: 30px;
     padding-right: 30px; */
-    /* margin:0 300px; */
+    margin:0 600px;
     position: absolute;
-    background-image: url(./b1.svg);
+    background-image: url(./newfaqboard.svg);
     background-repeat: no-repeat;
     background-position: 20px;
     background-size: 320px;
@@ -83,20 +95,20 @@
 
 
 .question{
-    color:white;
+    color:rgb(10, 1, 1);
     display:flex;
     justify-content:space-between;
     align-items: center;
     cursor:pointer;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(10,1,1);
     
     
     
 }
 
 .answer{
-    background: #CC33F2;
-    color: white;
+    background: #FEC5FC;
+    color: rgb(10,1,1);
     max-height: 0;
     overflow:hidden;
     transition: all 0.7s cubic-bezier(0,1,0,1);
@@ -105,8 +117,8 @@
 .answer.show{
     /* border-bottom: 1px solid white; */
     font-size:small;
-    background: #CC33F2;
-    color: white;
+    background: #FEC5FC;
+    color: rgb(10,1,1);
     height: auto;
     max-height: 300px;
     transition: all 0.7s cubic-bezier(1,0,1,0);
