@@ -1,0 +1,59 @@
+.TimeLineContent{
+    display: flex;
+    min-height: 100px;
+    border-radius: 20px;
+    max-width: 500px;
+    border: 3px solid white;
+    overflow: hidden;
+}
+.TimeLineContent.right{
+    flex-direction: row;
+}
+.TimeLineContent.left{
+    flex-direction: row-reverse;
+    margin-left: auto;
+}
+.TLDate{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+    font-size: 24px;
+    color: antiquewhite;
+    background-color: #3C5473;
+}
+.right .TLDate{
+    border-right: 3px solid white;
+}
+.left .TLDate{
+    border-left: 3px solid white;
+}
+.TLDate span{
+    font-size: 32px;
+}
+.TLTitle{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+    font-size: 36px;
+    color: antiquewhite;
+    background-color: #788698;
+}
+
+.TimelineBox.animatedContent .TimeLineContent{
+    opacity: 0;
+    transition: 1s;
+}
+.TimelineBox.animatedContent .TimeLineContent.left{
+    transform: translateX(100%);
+}
+.TimelineBox.animatedContent .TimeLineContent.right{
+    transform: translateX(-100%);
+}
+.TimelineBox.animatedContent.show .TimeLineContent{
+    opacity: 1;
+    transform: translateX(0px);
+}

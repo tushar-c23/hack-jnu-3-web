@@ -1,0 +1,82 @@
+*{
+    z-index: 1;
+}
+
+.ParallaxStarter{
+    height: 0;
+    position: sticky;
+    top: 100vh;
+    z-index: 0;
+}
+.ParallaxTargetContainer{
+    height: 0;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+.ParallaxTarget{
+    position: absolute;
+    bottom: 0;
+}
+.ParallaxDiv{
+    z-index: 0;
+}
+.Parallax{
+    z-index: 0;
+}
+.Parallax img{
+    z-index: 0;
+}
+.DistantForestTarget{
+    height:150vh;
+    width: 100%;
+}
+.DistantForest .ParallaxDiv{
+    position: absolute;
+    bottom: 0;
+    height: 150vh;
+    width: 100%;
+    overflow: hidden;
+}
+.DistantForest .ParallaxDiv .Parallax{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* height: 100%; */
+}
+
+.FooterTrees .ParallaxDiv{
+    position: absolute;
+    bottom: 0;
+    height: 200vh;
+    width: 100%;
+    overflow: hidden;
+}
+.FooterTrees .ParallaxDiv .Parallax{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* height: 100%; */
+}
+.FooterTreesTarget{
+    height:200vh;
+    width: 100%;
+}
+
+.FooterParallax .ParallaxDiv{
+    position: absolute;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.FooterParallax .ParallaxDiv .Parallax{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* height: 100%; */
+}
+.FooterParallaxTarget{
+    height:100vh;
+    width: 100%;
+}
