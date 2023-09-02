@@ -116,7 +116,79 @@
     font-weight: bold;
     color: antiquewhite;
 }
-
+.MobileTimeline{
+    width: 100%;
+    height: 100%;
+}
+.MobileTimelineBox{
+    padding-top: 100px;
+    /* width: 100%; */
+    height: 100%;
+    justify-content: center;
+    padding-left: 50px !important;
+    animation: 0.44s ease-out 0s 1 slideInLeft;
+}
+.MobileTimelineBox li::before  {
+    flex: 0;
+    padding: 0;
+}
+.MobileTimeLineContent{
+    width: auto;
+    max-width: 90%;
+    display: flex;
+    border-radius: 15px;
+    border: 2px solid antiquewhite;
+    min-height: 70px;
+    overflow: hidden;
+    transform: rotateX(90deg);  
+}
+.MTLTitle{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+    font-size: 24px;
+    color: antiquewhite;
+    background-color: #788698;
+}
+.MTLDate{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+    font-size: 18px;
+    color: antiquewhite;
+    background-color: #3C5473;
+    border-right: 2px solid antiquewhite;
+}
+.MobileTimeline .contentBox{
+    margin-bottom: 12px;
+}
+.content1{
+    animation: 0.22s ease-in 0.44s 1 rotateIn;
+    animation-fill-mode: forwards;
+}
+.content2{
+    animation: 0.22s ease-in 0.66s 1 rotateIn;
+    animation-fill-mode: forwards;
+}
+.content3{
+    animation: 0.22s ease-in 0.88s 1 rotateIn;
+    animation-fill-mode: forwards;
+}
+.content4{
+    animation: 0.22s ease-in 1.10s 1 rotateIn;
+    animation-fill-mode: forwards;
+}
+.forward .MobileTimeLineContent , .backward .MobileTimeLineContent{
+    animation: 0.33s ease-in 0s 1 rotateOut;
+    animation-fill-mode: forwards;
+}
+.forward .MobileTimelineBox , .backward .MobileTimelineBox{
+    animation: 0.22s ease-out 0.44s 1 slideOutLeft;
+}
 @keyframes slideInUpDown {
     0% {
         transform: translateY(100%);
@@ -201,5 +273,23 @@
 
     100% {
         transform: translateX(100%);
+    }
+}
+@keyframes rotateIn {
+    0% {
+        transform: rotateX(90deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+@keyframes rotateOut {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(-90deg);
     }
 }
