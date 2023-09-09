@@ -1,0 +1,96 @@
+.prizes-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.prizes-info h1 {
+  font-weight: 500;
+  width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  /* margin-bottom: 1.5rem; */
+}
+
+.prize-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+
+}
+
+
+
+/* .green {
+    background-color: rgb(122, 0, 43);
+  } */
+
+.prize-cards .prizeCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  /* height: 100px; */
+  height: max-content;
+  width: 250px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.red {
+  background-color: deeppink;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.blue {
+  background-color: dodgerblue;
+  height: 25rem !important;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.green {
+  background-color: green;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.prize-cards .prizeCard h1.tip {
+  font-weight: 700;
+}
+
+.prize-cards .prizeCard p.second-text {
+  font-size: 1em;
+}
+
+.prize-cards .prizeCard:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.prize-cards:hover>.prizeCard:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+.number,
+.trophy,
+.reward {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.trophy img {
+  width: 10rem;
+}
