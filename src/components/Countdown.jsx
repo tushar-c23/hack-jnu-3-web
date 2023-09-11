@@ -7,8 +7,7 @@ function Countdown() {
   const [currentTime, setCurrentTime] = useState(new Date().getTime());
   const gap = endTime - currentTime;
 
-  const milliseconds = 1;
-  const seconds = 1000 * milliseconds;
+  const seconds = 1000
   const minutes = seconds * 60;
   const hours = minutes * 60;
   const days = hours * 24;
@@ -17,7 +16,6 @@ function Countdown() {
   const remainingHours = Math.floor((gap % days) / hours);
   const remainingMinutes = Math.floor((gap % hours) / minutes);
   const remainingSeconds = Math.floor((gap % minutes) / seconds);
-  const remainingMilliseconds = Math.floor((gap % seconds) / milliseconds);
 
   useEffect(() => {
     setTimeout(() => {
@@ -38,7 +36,6 @@ function Countdown() {
         hours={remainingHours}
         minutes={remainingMinutes}
         seconds={remainingSeconds}
-        milliseconds={remainingMilliseconds}
       />
     );
   }

@@ -25,10 +25,6 @@ function TimerCard(props) {
           <h2>{props.seconds}</h2>
           <h4>SECONDS</h4>
         </div>
-        <div className="timerCard">
-          <h2>{props.miliseconds}</h2>
-          <h4>MILLISECONDS</h4>
-        </div>
       </div>
     </div>
   );
