@@ -19,10 +19,10 @@ const Mobile = () => {
 
   const onTouchStart = (e) => {
     setTouchEnd(null); // otherwise the swipe is fired even with usual touch events
-    setTouchStart(e.targetTouches[0].clientY);
+    setTouchStart(e.targetTouches[0].clientX);
   };
 
-  const onTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientY);
+  const onTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientX);
 
   const onTouchEnd = () => {
     if (!touchStart || !touchEnd) return;
@@ -53,8 +53,7 @@ const Mobile = () => {
         }, 500);
       }
     }
-    console.log(page);
-    // add your conditional logic here
+    // console.log(page);
   };
 
   return (

@@ -7,7 +7,7 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ParallaxProvider>
+    <ParallaxProvider isDisabled={screen.width<=1150}>
     {(screen.width >= 720) &&<App />}
     {(screen.width < 720) &&<Mobile />}
     </ParallaxProvider>

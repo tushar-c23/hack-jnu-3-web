@@ -3,6 +3,32 @@
     flex-direction: column;
     
 }
+.countDown h1{
+    font-weight: bold;
+    font-size: 45px;
+}
+@media screen and (max-width: 1400px) and (min-width: 1151px) {
+.countDown h1{
+    font-size: 32px;
+}
+.timerCard h2{
+    font-size: 24px !important;
+}
+.timerCard h4{
+    font-size: 16px !important;
+}
+}
+@media screen and (max-width: 1150px) {
+    .countDown h1{
+        font-size: 24px;
+    }
+    .timerCard h2{
+        font-size: 18px !important;
+    }
+    .timerCard h4{
+        font-size: 12px !important;
+    }
+    }
 .timerCards{
     display: flex;
     flex-direction: row;
@@ -10,8 +36,8 @@
 }
 .timerCard{
     position: relative;
-    width: 100px;
-    height: 120px;
+    width: min(100px,6vw);
+    height: min(120px,7.2vw);
     display: flex;
     flex-direction: column;
     justify-content: center;
