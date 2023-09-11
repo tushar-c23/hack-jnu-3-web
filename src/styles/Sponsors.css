@@ -16,7 +16,7 @@
 }
 .SponsorsText{
     font-size: 36px;
-    font-family: fantasy;
+    font-family: var(--fantasy-font);
     color: antiquewhite;
 }
 .SponsorsLogos{

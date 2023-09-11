@@ -3,7 +3,7 @@
     min-height: 100px;
     border-radius: 20px;
     max-width: 500px;
-    border: 3px solid white;
+    border: 3px solid var(--base-pink-lighter);
     overflow: hidden;
 }
 .TimeLineContent.right{
@@ -18,29 +18,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: fantasy;
-    font-size: 24px;
-    color: antiquewhite;
-    background-color: #9B287B;
+    font-family: var(--fantasy-font);
+    font-size: var(--font-size-large);
+    color: var(--base-light);
+    background-color: var(--base-purple-light);
 }
 .right .TLDate{
-    border-right: 3px solid white;
+    border-right: 3px solid var(--base-pink-lighter);
 }
 .left .TLDate{
-    border-left: 3px solid white;
+    border-left: 3px solid var(--base-pink-lighter);
 }
 .TLDate span{
-    font-size: 32px;
+    font-size: var(--font-size-large);
 }
 .TLTitle{
     width: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: fantasy;
-    font-size: 36px;
-    color: antiquewhite;
-    background-color: #F26157;
+    font-family: var(--fantasy-font);
+    font-size: var(--font-size-large);
+    color: var(--base-light);
+    background-color: var(--base-purple);
 }
 
 .TimelineBox.animatedContent .TimeLineContent{

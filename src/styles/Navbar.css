@@ -27,14 +27,14 @@
   display: flex;
 }
 .NavBox {
-  background-color: #77048B;
+  background-color: var(--base-purple-dark);
   height: 80px;
   width: max(20%, 250px);
 }
 .triangle {
   width: 0;
   height: 0;
-  border-top: 80px solid #77048B;
+  border-top: 80px solid var(--base-purple-dark);
   border-right: 80px solid transparent;
 }
 .NavTitleBoxSlide {
@@ -47,7 +47,7 @@
   transition: 1s;
 }
 .NavTitleBox {
-  background-color: #9B287B;
+  background-color: var(--base-pink-light);
   height: 60px;
   width: auto;
   min-width: 150px;
@@ -68,7 +68,7 @@
 .trianglesmol {
   width: 0;
   height: 0;
-  border-top: 60px solid #9B287B;
+  border-top: 60px solid var(--base-pink-light);
   border-right: 60px solid transparent;
 }
 .NavBar .NavBox .logo {
@@ -78,7 +78,7 @@
 .NavHeading {
   margin: auto;
   font-family: "Courier New", Courier, monospace;
-  color: whitesmoke;
-  font-size: 30px;
+  color: var(--base-light);
+  font-size: var(--font-size-large);
   font-weight: bold;
 }

@@ -127,7 +127,7 @@ function App() {
       <section className="Timeline pages1" ref={TimelineRef} id="Timeline">
         <Timeline></Timeline>
       </section>
-      <div className="SpaceFiller"></div>
+      <div className="h-[20vh]"></div>
       <section className="Prizes pages1" ref={PrizesRef} id="Prizes">
         <Prizes></Prizes>
       </section>
