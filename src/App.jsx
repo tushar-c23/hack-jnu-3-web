@@ -105,7 +105,7 @@ function App() {
   return (
     <>
     <div className="App" id="AppHome">
-      <section className="Home pages1" ref={LandingRef} id="Home">
+      <section className="Home" ref={LandingRef} id="Home">
       <Home />
       </section>
       <div className="NavBar" id="NavBar">

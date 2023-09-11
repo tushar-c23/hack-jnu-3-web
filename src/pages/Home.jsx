@@ -19,54 +19,61 @@ import Background from "../img/Background.svg";
 import TimerCard from '../components/Countdown'
 
 const Home = () => {
+  let speedMult;
+  if(screen.width>=1150){
+    speedMult=5;
+  }
+  else{
+    speedMult=0;
+  }
   return (
     <div className="HomePage">
       <ParallaxBanner className="HomeBanner">
-        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={0}>
+        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={0*speedMult}>
           <img src={Background} alt="" className="MountainLayer" />
         </ParallaxBannerLayer>
-        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={-25}>
-          <img src={MountainsLayer12} alt="" className="MountainLayer mt-20" />
+        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={-5*speedMult}>
+          <img src={MountainsLayer12} alt="" className="MountainLayer mt-[5.625vw]" />
         </ParallaxBannerLayer>
-        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={-25}>
-          <img src={MountainsLayer11} alt="" className="MountainLayer mt-20" />
+        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={-5*speedMult}>
+          <img src={MountainsLayer11} alt="" className="MountainLayer mt-[4.5vw]" />
         </ParallaxBannerLayer>
-        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={-20}>
-          <img src={MountainsLayer10} alt="" className="MountainLayer mt-16" />
+        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={-4*speedMult}>
+          <img src={MountainsLayer10} alt="" className="MountainLayer mt-[4.5vw%]" />
         </ParallaxBannerLayer>
-        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={-15}>
-          <img src={MountainsLayer9} alt="" className="MountainLayer mt-12" />
+        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={-3*speedMult}>
+          <img src={MountainsLayer9} alt="" className="MountainLayer mt-[3.375vw]" />
         </ParallaxBannerLayer>
-        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={-10}>
-          <img src={MountainsLayer8} alt="" className="MountainLayer mt-8" />
+        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={-2*speedMult}>
+          <img src={MountainsLayer8} alt="" className="MountainLayer mt-[2.25vw]" />
         </ParallaxBannerLayer>
-        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={-5}>
-          <img src={MountainsLayer7} alt="" className="MountainLayer mt-8" />
+        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={-1*speedMult}>
+          <img src={MountainsLayer7} alt="" className="MountainLayer mt-[2.25vw]" />
         </ParallaxBannerLayer>
-        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={-25}>
-          <img src={MountainsLayer6} alt="" className="MountainLayer mt-48" />
+        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={-5*speedMult}>
+          <img src={MountainsLayer6} alt="" className="MountainLayer HomeLogoSVG" />
         </ParallaxBannerLayer>
-        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={5}>
-          <img src={MountainsLayer5} alt="" className="MountainLayer mt-8" />
+        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={1*speedMult}>
+          <img src={MountainsLayer5} alt="" className="MountainLayer mt-[2.25vw]" />
         </ParallaxBannerLayer>
-        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={10}>
-          <img src={MountainsLayer4} alt="" className="MountainLayer mt-8" />
+        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={2*speedMult}>
+          <img src={MountainsLayer4} alt="" className="MountainLayer mt-[2.25vw]" />
         </ParallaxBannerLayer>
-        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={-10}>
-          <div className="h-[67vh]"></div>
+        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={-2*speedMult}>
+          <div className="TimerCardGap"></div>
           <TimerCard days={10} hours={20} minutes={10} second={5}></TimerCard>
         </ParallaxBannerLayer>
-        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={15}>
-          <img src={MountainsLayer3} alt="" className="MountainLayer mt-12" />
+        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={3*speedMult}>
+          <img src={MountainsLayer3} alt="" className="MountainLayer mt-[3.375vw]" />
         </ParallaxBannerLayer>
-        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={20}>
-          <img src={MountainsLayer2} alt="" className="MountainLayer mt-16" />
+        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={4*speedMult}>
+          <img src={MountainsLayer2} alt="" className="MountainLayer mt-[4.5vw]" />
         </ParallaxBannerLayer>
-        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={25}>
-          <img src={MountainsLayer1} alt="" className="MountainLayer mt-20" />
+        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={5*speedMult}>
+          <img src={MountainsLayer1} alt="" className="MountainLayer mt-[5.625vw]" />
         </ParallaxBannerLayer>
-        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={30}>
-          <img src={MountainsLayer0} alt="" className="MountainLayer mt-24" />
+        <ParallaxBannerLayer className="ParallaxBannerLayer" speed={6*speedMult}>
+          <img src={MountainsLayer0} alt="" className="MountainLayer mt-[6.75vw]" />
           <div className="spaceFiller"></div>
         </ParallaxBannerLayer>
       </ParallaxBanner>

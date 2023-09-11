@@ -53,8 +53,7 @@ const Mobile = () => {
         }, 500);
       }
     }
-    console.log(page);
-    // add your conditional logic here
+    // console.log(page);
   };
 
   return (
