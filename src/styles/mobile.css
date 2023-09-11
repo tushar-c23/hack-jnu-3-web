@@ -1,0 +1,295 @@
+.MobileApp {
+    width: 100%;
+    height: 100vh;
+    transition: 500ms;
+}
+.MobileBox{
+    background: linear-gradient(to top , #322c4f80 , #261b3580 , #21133280);
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.MobileApp.page0{
+    background-color: #624a7dff;
+}
+.MobileApp.page1{
+    background-color: #5b4477ff;
+}
+.MobileApp.page2{
+    background-color: #50396dff;
+}
+.MobileApp.page3{
+    background-color: #452e63ff;
+}
+.MobileApp.page4{
+    background-color: #3c245bff;
+}
+.MobileApp.page5{
+    background-color: rgb(38, 23, 58);
+}
+.MobileApp.page6{
+    background-color: rgb(27, 16, 41);
+}
+.HomeLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HomeLogo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    animation: 0.5s ease-out 0s 1 slideInUp;
+}
+.MobileHome {
+    width: 100%;
+    height: 100vh;
+}
+
+.MobileHome .Mountains {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.MobileHome .Mountains img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.MobileHome.forward .InDown{
+    animation: 0.55s ease-out 0s 1 slideOutDown;
+}
+.MobileHome .InDown {
+    animation: 0.5s ease-in 0s 1 slideInDown;
+}
+.MobileHome.forward #HomeLogo{
+    animation: 0.55s ease-in 0s 1  slideOutUp;
+}
+
+.MobileAbout{
+    width: 100%;
+    height: 100%;
+}
+.AboutBoxes{
+    height: 100%;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.AboutBoxes .Box{
+    padding: 10px;
+    text-align: start;
+    width: 75%;
+    border-radius: 15px;
+    background-color: #3C5473;
+    border: 3px solid #788698;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: normal;
+}
+.AboutBoxes .inLeft{
+    animation: 0.5s ease-in 0s 1  slideInLeft;
+}
+.forward .AboutBoxes .inLeft , .backward .AboutBoxes .inLeft{
+    animation: 0.55s ease-in 0s 1 slideOutLeft;
+}
+.AboutBoxes .inRight{
+    animation: 0.5s ease-in 0s 1  slideInRight;
+}
+
+.forward .AboutBoxes .inRight , .backward .AboutBoxes .inRight{
+    animation: 0.55s ease-in 0s 1 slideOutRight;
+}
+.AboutBox-title{
+    font-family: fantasy;
+    font-size: larger;
+}
+.AboutBox-title .heavy{
+    font-weight: bold;
+    color: antiquewhite;
+}
+.MobileTimeline{
+    width: 100%;
+    height: 100%;
+}
+.MobileTimelineBox{
+    padding-top: 100px;
+    /* width: 100%; */
+    height: 100%;
+    justify-content: center;
+    padding-left: 50px !important;
+    animation: 0.44s ease-out 0s 1 slideInLeft;
+}
+.MobileTimelineBox li::before  {
+    flex: 0;
+    padding: 0;
+}
+.MobileTimeLineContent{
+    width: auto;
+    max-width: 90%;
+    display: flex;
+    border-radius: 15px;
+    border: 2px solid antiquewhite;
+    min-height: 70px;
+    overflow: hidden;
+    transform: rotateX(90deg);  
+}
+.MTLTitle{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+    font-size: 24px;
+    color: antiquewhite;
+    background-color: #788698;
+}
+.MTLDate{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+    font-size: 18px;
+    color: antiquewhite;
+    background-color: #3C5473;
+    border-right: 2px solid antiquewhite;
+}
+.MobileTimeline .contentBox{
+    margin-bottom: 12px;
+}
+.content1{
+    animation: 0.22s ease-in 0.44s 1 rotateIn;
+    animation-fill-mode: forwards;
+}
+.content2{
+    animation: 0.22s ease-in 0.66s 1 rotateIn;
+    animation-fill-mode: forwards;
+}
+.content3{
+    animation: 0.22s ease-in 0.88s 1 rotateIn;
+    animation-fill-mode: forwards;
+}
+.content4{
+    animation: 0.22s ease-in 1.10s 1 rotateIn;
+    animation-fill-mode: forwards;
+}
+.forward .MobileTimeLineContent , .backward .MobileTimeLineContent{
+    animation: 0.33s ease-in 0s 1 rotateOut;
+    animation-fill-mode: forwards;
+}
+.forward .MobileTimelineBox , .backward .MobileTimelineBox{
+    animation: 0.22s ease-out 0.44s 1 slideOutLeft;
+}
+@keyframes slideInUpDown {
+    0% {
+        transform: translateY(100%);
+    }
+
+    95% {
+        transform: translateY(-10%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes slideInUp {
+    0% {
+        transform: translateY(-200%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes slideInDown {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes slideOutDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+@keyframes slideOutUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-200%);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideOutLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideOutRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+@keyframes rotateIn {
+    0% {
+        transform: rotateX(90deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+@keyframes rotateOut {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(-90deg);
+    }
+}
