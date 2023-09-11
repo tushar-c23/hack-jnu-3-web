@@ -3,13 +3,16 @@
     overflow: hidden;
 }
 .card{
-    background: #0B132B;
-    border: 3px solid #0FA3B1;
+    background: var(--base-dark);
+    box-shadow: 3px 3px 5px var(--base-blue);
     margin: 0 !important;
+    border-radius: 20px;
+    transition: 500ms;
 }
 .card:hover{
-    background: #9B287B;
-    border: 3px solid #FCDEBE;
+    background: var(--base-purple-darker);
+    box-shadow: 5px 5px 8px var(--base-purple);
+    /* border: 3px solid #FCDEBE; */
 }
 .About .TextContent .TextBox{
     width: 50%;
@@ -28,13 +31,13 @@
   }
 .card-title{
     font-size: 36px;
-    font-family: fantasy;
-    color: antiquewhite;
+    font-family: var(--fantasy-font);
+    color: var(--base-light);
 }
 .card-title .heavy{
     font-size: 54px;
     font-weight: bold;
-    color: #E980FC;
+    color: var(--base-pink-lighter);
 }
 .cardset-body{
     align-items: stretch;

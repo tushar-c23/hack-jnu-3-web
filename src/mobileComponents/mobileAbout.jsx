@@ -1,6 +1,11 @@
+import ForestLayer1 from '../assets/MobileAssets/ForestLayer1.svg'
+
 const MobileAbout = () => {
   return (
     <div className="MobileAbout" id="MobileAbout">
+      <div className="background ForestLayer1">
+        <img src={ForestLayer1} alt="trees?" />
+      </div>
       <div className="AboutBoxes">
         <div className="Box inLeft">
           <div className="AboutBox-title">

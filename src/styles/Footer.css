@@ -1,7 +1,7 @@
 .FooterBox{
     width: 100%;
     height: 100%;
-    font-family: fantasy;
+    font-family: var(--fantasy-font);
 }
 .FooterContent{
     height: 100%;

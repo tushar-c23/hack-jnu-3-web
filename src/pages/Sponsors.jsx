@@ -30,7 +30,7 @@ const Sponsors = () => {
                 </div>
             </div>
         </div>
-            <div className="SponsorsText">Our Wonderful Sponsors</div>
+            <div className="SponsorsText">For making this possible</div>
     </div> );
 }
  
