@@ -29,6 +29,9 @@
         font-size: 12px !important;
     }
     }
+.countdown-title {
+    color: antiquewhite;
+}
 .timerCards{
     display: flex;
     flex-direction: row;
@@ -82,6 +85,6 @@
     position:absolute;
     inset: 4px;
     background: black;
-border-radius: 8px;
+    border-radius: 8px;
 }
   
