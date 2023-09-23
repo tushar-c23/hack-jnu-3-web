@@ -13,7 +13,7 @@ const Prizes = () => {
             <h1 className="tip">2nd</h1>
           </div>
           <div className="trophy">
-            <img src="../../trophy.svg" alt="" />
+            <img src="../../src/assets/trophy.svg" alt="" />
           </div>
           <div className="reward">
             <p className="second-text">50 Thousand rupees</p>
@@ -24,7 +24,7 @@ const Prizes = () => {
             <h1 className="tip">1st</h1>
           </div>
           <div className="trophy">
-            <img src="../../trophy.svg" alt="" />
+            <img src="../../src/assets/trophy1.svg" alt="" />
           </div>
           <div className="reward">
             <p className="second-text">1 Lakh Rupees</p>
@@ -35,7 +35,7 @@ const Prizes = () => {
             <h1 className="tip">3rd</h1>
           </div>
           <div className="trophy">
-            <img src="../../trophy.svg" alt="" />
+            <img src="../../src/assets/trophy.svg" alt="" />
           </div>
           <div className="reward">
             <p className="second-text">25 thousand Rupees</p>

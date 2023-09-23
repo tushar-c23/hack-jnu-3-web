@@ -24,12 +24,6 @@
 
 }
 
-
-
-/* .green {
-    background-color: rgb(122, 0, 43);
-  } */
-
 .prize-cards .prizeCard {
   display: flex;
   align-items: center;
@@ -51,7 +45,7 @@
 .red {
   background-color: deeppink;
   margin-top: auto;
-  margin-bottom: auto;
+  margin-bottom: 0;
 }
 
 .blue {
@@ -64,7 +58,7 @@
 .green {
   background-color: green;
   margin-top: auto;
-  margin-bottom: auto;
+  margin-bottom: 0;
 }
 
 .prize-cards .prizeCard h1.tip {
