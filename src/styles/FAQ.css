@@ -1,38 +1,18 @@
- .bg1 {
 
-
-     position: relative;
-
-     top: 783px;
-     left: 670px;
-
-
- }
-
- .bg2 {
-
-
-     position: relative;
-
-     top: 370px;
-     left: 860px;
-
-
- }
 
  .faqsection {
      display: flex;
-     height: 350px;
+     height: 400px;
      width: 350px;
      justify-content: center;
      align-items: center;
 
      margin: 0 600px;
      position: absolute;
-     background-image: url(./newfaqboard.svg);
+     background-image: url(./faqboard.svg);
      background-repeat: no-repeat;
      background-position: 20px;
-     background-size: 320px;
+     background-size: 330px;
  }
 
  .faqboard {
