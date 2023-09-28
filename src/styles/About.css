@@ -1,19 +1,18 @@
-
-.card-body{
-    background-color: #3C5473;
-}
 .About{
     z-index: 1000;
     overflow: hidden;
 }
 .card{
-    border: 3px solid #F5BA9D;
+    background: var(--base-dark);
+    box-shadow: 3px 3px 5px var(--base-blue);
     margin: 0 !important;
-    
+    border-radius: 20px;
+    transition: 500ms;
 }
-.card-body:hover{
-    background: #788698;
-    border: 3px solid #3C5473;
+.card:hover{
+    background: var(--base-purple-darker);
+    box-shadow: 5px 5px 8px var(--base-purple);
+    /* border: 3px solid #FCDEBE; */
 }
 .About .TextContent .TextBox{
     width: 50%;
@@ -32,12 +31,13 @@
   }
 .card-title{
     font-size: 36px;
-    font-family: fantasy;
+    font-family: var(--fantasy-font);
+    color: var(--base-light);
 }
 .card-title .heavy{
     font-size: 54px;
     font-weight: bold;
-    color: antiquewhite;
+    color: var(--base-pink-lighter);
 }
 .cardset-body{
     align-items: stretch;
@@ -53,7 +53,7 @@
 .cardset-body.animatedContent .card-text{
     font-size: 10px;
     opacity: 0;
-    transition: 500ms;
+    transition: 200ms;
 }
 .cardset-body.animatedContent.show .card-text{
     font-size: 22px;
@@ -61,4 +61,24 @@
 }
 .card-text{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: antiquewhite;
+}
+.card:hover .card-text{
+    color: antiquewhite;
+}
+.card:hover .card-title .heavy{
+    color: #EDABB1;
+}
+.card:hover .card-link:not(:hover){
+    color: #EDABB1;
+}
+.card-link {
+    color: #F1AFFD;
+    text-decoration:underline;
+}
+.card-link:hover:active {
+    color: #FF36AB;
+}
+.card-link:hover {
+    color: #E55934;
 }

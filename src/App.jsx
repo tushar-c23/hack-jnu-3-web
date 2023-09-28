@@ -105,7 +105,7 @@ function App() {
   return (
     <>
     <div className="App" id="AppHome">
-      <section className="Home pages1" ref={LandingRef} id="Home">
+      <section className="Home" ref={LandingRef} id="Home">
       <Home />
       </section>
       <div className="NavBar" id="NavBar">
@@ -127,7 +127,7 @@ function App() {
       <section className="Timeline pages1" ref={TimelineRef} id="Timeline">
         <Timeline></Timeline>
       </section>
-      <div className="SpaceFiller"></div>
+      <div className="h-[20vh]"></div>
       <section className="Prizes pages1" ref={PrizesRef} id="Prizes">
         <Prizes></Prizes>
       </section>
@@ -154,7 +154,7 @@ function App() {
       </div>
       <div className="SpaceFiller"></div>
       <section className="FAQ pages1" ref={FAQRef} id="FAQ">
-        <FAQ></FAQ>
+        {/* <FAQ></FAQ> */}
       </section>
       <div className="SpaceFiller"></div>
     </div>

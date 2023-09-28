@@ -14,7 +14,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.3",
     "@mui/lab": "^5.0.0-alpha.140",
-    "@mui/material": "^5.14.5",
+    "@mui/material": "^5.14.6",
     "@mui/styled-engine": "^5.13.2",
     "@react-spring/parallax": "^9.7.3",
     "react": "^18.2.0",

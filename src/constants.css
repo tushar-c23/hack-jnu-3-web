@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Impact';
+    src: url('./assets/impact/impact.ttf');
+}
+
+:root{
+    --base-dark:#0B132B;
+    --base-light:#FAEBD7;
+
+    --base-blue:#232D88;
+    --base-blue-light:#5A61A5;
+    --base-blue-lighter:#A7AACA;
+    --base-blue-dark:#192276;
+    --base-blue-darker:#091159;
+
+    --base-purple:#4A1D86;
+    --base-purple-light:#7654A2;
+    --base-purple-lighter:#B3A3C8;
+    --base-purple-dark:#3D1374;
+    --base-purple-darker:#290558;
+    
+    --base-pink:#741481;
+    --base-pink-light:#924C9C;
+    --base-pink-lighter:#C09DC4;
+    --base-pink-dark:#640C70;
+    --base-pink-darker:#4B0155;
+
+    --fantasy-font:'Impact';
+    --normal_font:'sans-serif';
+
+    --base-gradient:linear-gradient(to right, #100819 , #100A25);
+}
+
+@media screen and (min-width:1400px){
+    :root{
+        --font-size-large:32px;
+        --font-size-larger:48px;
+        --font-size-heavy:20px;
+        --font-size-normal:16px;
+    }
+}
+@media screen and (min-width:1150px) and (max-width:1399px){
+    :root{
+        --font-size-large:28px;
+        --font-size-larger:42px;
+        --font-size-heavy:20px;
+        --font-size-normal:16px;
+    }
+}
+@media screen and (min-width:720px) and (max-width:1149px){
+    :root{
+        --font-size-large:24px;
+        --font-size-larger:36px;
+        --font-size-heavy:18px;
+        --font-size-normal:16px;
+    }
+}
+@media screen and (max-width:719px){
+    :root{
+        --font-size-large:20px;
+        --font-size-larger:30px;
+        --font-size-heavy:16px;
+        --font-size-normal:12px;
+    }
+}
+.heavy{
+    font-weight: bold;
+}
+.light{
+    font-weight: lighter;
+}

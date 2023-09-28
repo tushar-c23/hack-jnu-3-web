@@ -1,0 +1,49 @@
+.SponsorsBox{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( to bottom , #00000000 , #000000cc,#000000cc , #00000000);
+    z-index: 1000;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* background-color: #761cbadd; */
+    /* border-radius: 50px; */
+}
+.SponsorsText{
+    font-size: 36px;
+    font-family: var(--fantasy-font);
+    color: antiquewhite;
+}
+.SponsorsLogos{
+    margin: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: 500ms;
+    transform: scale(50%);
+}
+/* .SponsorsLogos :hover{
+    transition: 500ms;
+    transform: scale(105%);
+} */
+.company{
+    width: 33%;
+    padding: 20px;
+}
+.companyLogo{
+    filter: drop-shadow(5px 5px 10px #646cff);
+}
+/* .companyLogo :hover{
+    filter: drop-shadow(10px 10px 15px #FFFFFF);
+} */
+.SponsorsBox> .animatedContent.show.SponsorsLogos{
+    transform: scale(100%);
+}
