@@ -44,14 +44,14 @@
 
 .not-first {
   background-color: deeppink;
-  background-color: var(--base-pink-darker);
+  background-color: var(--base-purple-darker);
   margin-top: auto;
   margin-bottom: 0;
 }
 
 .first {
   background-color: dodgerblue;
-  background-color: var(--base-purple-darker);
+  background-color: var(--base-purple-dark);
   height: 25rem !important;
   margin-top: auto;
   margin-bottom: auto;
