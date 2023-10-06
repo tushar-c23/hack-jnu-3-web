@@ -24,12 +24,6 @@
 
 }
 
-
-
-/* .green {
-    background-color: rgb(122, 0, 43);
-  } */
-
 .prize-cards .prizeCard {
   display: flex;
   align-items: center;
@@ -48,24 +42,26 @@
   margin-right: 0.5rem;
 }
 
-.red {
+.not-first {
   background-color: deeppink;
+  background-color: var(--base-purple-darker);
   margin-top: auto;
-  margin-bottom: auto;
+  margin-bottom: 0;
 }
 
-.blue {
+.first {
   background-color: dodgerblue;
+  background-color: var(--base-purple-dark);
   height: 25rem !important;
   margin-top: auto;
   margin-bottom: auto;
 }
 
-.green {
+/* .green {
   background-color: green;
   margin-top: auto;
-  margin-bottom: auto;
-}
+  margin-bottom: 0;
+} */
 
 .prize-cards .prizeCard h1.tip {
   font-weight: 700;
