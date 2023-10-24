@@ -51,12 +51,14 @@
     padding: 10px;
 }
 .cardset-body.animatedContent .card-text{
-    font-size: 10px;
+    /* font-size: 10px; */
+    transform:scale(0.5);
     opacity: 0;
     transition: 200ms;
 }
 .cardset-body.animatedContent.show .card-text{
-    font-size: 22px;
+    /* font-size: 22px; */
+    transform:scale(1);
     opacity: 1;
 }
 .card-text{

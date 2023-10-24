@@ -30,7 +30,7 @@ const Mobile = () => {
     const isLeftSwipe = distance > minSwipeDistance;
     const isRightSwipe = distance < -minSwipeDistance;
     if (isLeftSwipe || isRightSwipe) {
-      if (isLeftSwipe && page < 6) {
+      if(isLeftSwipe && page<6){
         document
           .getElementById(sections[page])
           .classList.toggle("forward", true);
@@ -41,7 +41,7 @@ const Mobile = () => {
             .classList.toggle("forward", false);
         }, 500);
       }
-      else if (isRightSwipe && page > 0) {
+      else if(isRightSwipe && page>0){
         document
           .getElementById(sections[page])
           .classList.toggle("backward", true);
