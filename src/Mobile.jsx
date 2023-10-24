@@ -13,7 +13,7 @@ const Mobile = () => {
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
   const [page, setPage] = useState(0);
-    const sections = ['MobileHome','MobileAbout','MobileTimeline','MobilePrizes','MobileSponsors','MobileFAQ','MobileFooter']
+  const sections = ['MobileHome', 'MobileAbout', 'MobileTimeline', 'MobilePrizes', 'MobileSponsors', 'MobileFAQ', 'MobileFooter']
   // the required distance between touchStart and touchEnd to be detected as a swipe
   const minSwipeDistance = 50;
 
@@ -30,7 +30,7 @@ const Mobile = () => {
     const isLeftSwipe = distance > minSwipeDistance;
     const isRightSwipe = distance < -minSwipeDistance;
     if (isLeftSwipe || isRightSwipe) {
-      if(isLeftSwipe && page<6){
+      if (isLeftSwipe && page < 6) {
         document
           .getElementById(sections[page])
           .classList.toggle("forward", true);
@@ -41,7 +41,7 @@ const Mobile = () => {
             .classList.toggle("forward", false);
         }, 500);
       }
-      else if(isRightSwipe && page>0){
+      else if (isRightSwipe && page > 0) {
         document
           .getElementById(sections[page])
           .classList.toggle("backward", true);
