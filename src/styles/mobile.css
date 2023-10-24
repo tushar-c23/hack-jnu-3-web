@@ -132,6 +132,13 @@
     color: antiquewhite;
 }
 
+.forward.MobileAbout .ForestLayer1{
+    animation: 0.5 appearLeft;
+}
+.backward.MobileAbout .ForestLayer1{
+    animation: 0.5 appearLeft;
+}
+
 /* Timeline CSS */
 
 .MobileTimeline{

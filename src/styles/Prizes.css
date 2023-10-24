@@ -3,7 +3,18 @@
   flex-direction: column;
 }
 
-.prizes-info h1 {
+.prizes-info h2 {
+  font-size: var(--font-size-larger);
+  font-weight: 500;
+  width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  /* margin-bottom: 1.5rem; */
+}
+
+.prizes-info h4 {
+  font-size: var(--font-size-normal);
   font-weight: 500;
   width: 40rem;
   margin-left: auto;

@@ -139,11 +139,11 @@ function App() {
       <div className="ParallaxTargetContainer">
         <div className="FooterTreesTarget ParallaxTarget" ref={FooterTreesParallaxRef} ></div>
       </div>
-      <div className="SpaceFiller"></div>
+      <div className="h-[10vh]"></div>
       <section className="Sponsors pages1" ref={SponsorsRef} id="Sponsors">
         <Sponsors></Sponsors>
       </section>
-      <div className="SpaceFiller"></div>
+      {/* <div className="SpaceFiller"></div> */}
       <section className="ParallaxStarter FooterParallax">
         <div className="ParallaxDiv">
           <FooterParallax targetElement={FooterParallaxTarget} setStarted={setStarted} started={started}/>
@@ -154,7 +154,7 @@ function App() {
       </div>
       <div className="SpaceFiller"></div>
       <section className="FAQ pages1" ref={FAQRef} id="FAQ">
-        {/* <FAQ></FAQ> */}
+        <FAQ></FAQ>
       </section>
       <div className="SpaceFiller"></div>
     </div>

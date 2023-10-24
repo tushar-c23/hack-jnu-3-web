@@ -13,8 +13,9 @@ const AboutHackJNU = () => {
                   is HackJNU?
                 </div>
                 <div className="card-text">
-                  HackJNU is a hackathon arranged by one of the top universities
-                  in India , The Jawaharlal Nehru University
+                  HackJNU is a national hackathon arranged by one of the top universities
+                  in India , The Jawaharlal Nehru University . After the immesnse success of HackJNU
+                  and HackJNU 2.0 , we are back in game with HackJNU3
                 </div>
               </div>
             </div>
@@ -29,7 +30,9 @@ const AboutHackJNU = () => {
                   Can I Register?
                 </div>
                 <div className="card-text">
-                Registration are live on DevFolio, click <a href="#" className="card-link">here</a> for registration
+                Registration will soon be live on DevFolio.<br/>
+                Click <a href="#" className="card-link">here</a> to pre-register
+                for email notifications 
                 </div>
               </div>
             </div>
@@ -42,7 +45,7 @@ const AboutHackJNU = () => {
                   All Can Register?
                 </div>
                 <div className="card-text">
-                  College students from all over India pursuing Engineeering can register for the Hackathon
+                  College students from all over India pursuing Bachelors in any STEM field can register for this Hackathon
                 </div>
               </div>
             </div>
@@ -55,7 +58,7 @@ const AboutHackJNU = () => {
                   will it be held?
                 </div>
                 <div className="card-text">
-                  HackJNU will be held at the <a href="#" className="card-link">Convention Centre, JNU</a>
+                  HackJNU will be held Offline at the <a href="#" className="card-link">Convention Centre, JNU</a>
                 </div>
               </div>
             </div>

@@ -16,7 +16,8 @@ import MountainsLayer11 from "../img/MountainsLayer11.svg";
 import MountainsLayer12 from "../img/MountainsLayer12.svg";
 import Background from "../img/Background.svg";
 
-import TimerCard from '../components/Countdown'
+// import TimerCard from '../components/Countdown'
+import Countdown from "../components/Countdown";
 
 const Home = () => {
   let speedMult;
@@ -61,7 +62,7 @@ const Home = () => {
         </ParallaxBannerLayer>
         <ParallaxBannerLayer className="ParallaxBannerLayer" speed={-2*speedMult}>
           <div className="TimerCardGap"></div>
-          <TimerCard days={10} hours={20} minutes={10} second={5}></TimerCard>
+          <Countdown/>
         </ParallaxBannerLayer>
         <ParallaxBannerLayer className="ParallaxBannerLayer" speed={3*speedMult}>
           <img src={MountainsLayer3} alt="" className="MountainLayer mt-[3.375vw]" />

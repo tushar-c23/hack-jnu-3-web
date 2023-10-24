@@ -24,7 +24,9 @@
 .TimerCardGap{
     height: 34vw;
 }
-
+.TimerCardDiv{
+    animation: Appear 3s;
+}
 .HomeLogoSVG{
     padding: 6rem;
     margin-top: 12rem;
@@ -32,5 +34,20 @@
 @media screen and (max-width: 1150px) {
     .HomeLogoSVG{
    margin-top: 0px;
+    }
+}
+
+@keyframes Appear {
+    from{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 60%;
+    }
+    to{
+        opacity: 1;
     }
 }

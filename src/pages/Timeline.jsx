@@ -20,9 +20,9 @@ const TimelineComponent = () => {
             <div className="TimeLineContent right">
               <div className="TLDate">
                 <p>
-                  <span>3rd</span>
+                  <span>Date</span>
                   <br />
-                  Sept
+                  TBD
                 </p>
               </div>
               <div className="TLTitle">Registration Begins</div>
@@ -38,9 +38,9 @@ const TimelineComponent = () => {
           <div className="TimeLineContent left">
               <div className="TLDate">
                 <p>
-                  <span>30th</span>
+                  <span>Date</span>
                   <br />
-                  Sept
+                  TBD
                 </p>
               </div>
               <div className="TLTitle">Registration Ends</div>
@@ -56,12 +56,12 @@ const TimelineComponent = () => {
           <div className="TimeLineContent right">
               <div className="TLDate">
                 <p>
-                  <span>14th</span>
+                  <span>27th</span>
                   <br />
-                  Oct
+                  Jan
                 </p>
               </div>
-              <div className="TLTitle">Day Of the Hackathon</div>
+              <div className="TLTitle">First Day Of Hackathon</div>
             </div>
           </TimelineContent>
         </TimelineItem>
@@ -73,16 +73,17 @@ const TimelineComponent = () => {
           <div className="TimeLineContent left">
               <div className="TLDate">
                 <p>
-                  <span>15th</span>
+                  <span>28th</span>
                   <br />
-                  Oct
+                  Jan
                 </p>
               </div>
-              <div className="TLTitle">Results Declared</div>
+              <div className="TLTitle">Final Day and Results</div>
             </div>
           </TimelineContent>
         </TimelineItem>
       </Timeline>
+      <div className="Disclaimer">Note: all dates are subjective to changes as and when required</div>
     </div>
   );
 };
