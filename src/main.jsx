@@ -8,8 +8,8 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ParallaxProvider >
-    {(screen.width >= 720) &&<App />}
-    {(screen.width < 720) &&<Mobile />}
+      {(screen.width >= 720) && <App />}
+      {(screen.width < 720) && <Mobile />}
     </ParallaxProvider>
   </React.StrictMode>,
 )

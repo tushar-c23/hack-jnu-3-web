@@ -3,7 +3,8 @@ import { useState, useEffect } from "react";
 import TimerCard from "./TimerCard";
 
 function Countdown() {
-  const endTime = new Date("January 27, 2024 12:00:00.000 GMT+0530").getTime();
+  const endTime = new Date("2024-01-27T12:00:00.000+05:30").getTime();
+
   const [currentTime, setCurrentTime] = useState(new Date().getTime());
   const gap = endTime - currentTime;
 
@@ -32,12 +33,12 @@ function Countdown() {
   } else {
     return (
       <div className="TimerCardDiv">
-      <TimerCard
-        days={remainingDays}
-        hours={remainingHours}
-        minutes={remainingMinutes}
-        seconds={remainingSeconds}
-      />
+        <TimerCard
+          days={remainingDays}
+          hours={remainingHours}
+          minutes={remainingMinutes}
+          seconds={remainingSeconds}
+        />
       </div>
     );
   }
