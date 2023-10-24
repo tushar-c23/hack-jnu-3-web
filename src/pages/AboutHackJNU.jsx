@@ -14,7 +14,7 @@ const AboutHackJNU = () => {
                 </div>
                 <div className="card-text">
                   HackJNU is a national hackathon arranged by one of the top universities
-                  in India , The Jawaharlal Nehru University . After the immesnse success of HackJNU
+                  in India , The Jawaharlal Nehru University . After the immense success of HackJNU
                   and HackJNU 2.0 , we are back in game with HackJNU3
                 </div>
               </div>

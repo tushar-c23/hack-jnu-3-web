@@ -9,7 +9,7 @@
 
      margin: 0 600px;
      position: absolute;
-     background-image: url(./faqboard.svg);
+     background-image: url('../../faqboard.svg');
      background-repeat: no-repeat;
      background-position: 20px;
      background-size: 330px;
