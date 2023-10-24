@@ -61,8 +61,12 @@ const Home = () => {
           <img src={MountainsLayer4} alt="" className="MountainLayer mt-[2.25vw]" />
         </ParallaxBannerLayer>
         <ParallaxBannerLayer className="ParallaxBannerLayer" speed={-2*speedMult}>
+
+          {/* TIMER */}
+        
           <div className="TimerCardGap"></div>
           <Countdown/>
+        
         </ParallaxBannerLayer>
         <ParallaxBannerLayer className="ParallaxBannerLayer" speed={3*speedMult}>
           <img src={MountainsLayer3} alt="" className="MountainLayer mt-[3.375vw]" />
