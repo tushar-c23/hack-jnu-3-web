@@ -13,7 +13,7 @@ const Mobile = () => {
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
   const [page, setPage] = useState(0);
-    const sections = ['MobileHome','MobileAbout','MobileTimeline','MobilePrizes','MobileSponsors','MobileFAQ','MobileFooter']
+  const sections = ['MobileHome', 'MobileAbout', 'MobileTimeline', 'MobilePrizes', 'MobileSponsors', 'MobileFAQ', 'MobileFooter']
   // the required distance between touchStart and touchEnd to be detected as a swipe
   const minSwipeDistance = 50;
 
