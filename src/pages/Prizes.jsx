@@ -15,10 +15,10 @@ const Prizes = () => {
             <h1 className="tip">2nd</h1>
           </div>
           <div className="trophy">
-            <img src={Trophy} alt="" />
+            <img src={Trophy} alt="Trophy" />
           </div>
           <div className="reward">
-            <p className="second-text">Cash Prize: ₹20000</p>
+            <p className="second-text">Exciting Cash Prize and more!</p>
           </div>
         </div>
         <div className="prizeCard first">
@@ -26,10 +26,10 @@ const Prizes = () => {
             <h1 className="tip">1st</h1>
           </div>
           <div className="trophy">
-            <img src={Trophy1} alt="" />
+            <img src={Trophy1} alt="Trophy" />
           </div>
           <div className="reward">
-            <p className="second-text">Cash Prize: ₹30000</p>
+            <p className="second-text">Exciting Cash Prize and more!</p>
           </div>
         </div>
         <div className="prizeCard not-first">
@@ -37,10 +37,10 @@ const Prizes = () => {
             <h1 className="tip">3rd</h1>
           </div>
           <div className="trophy">
-            <img src={Trophy} alt="" />
+            <img src={Trophy} alt="Trophy" />
           </div>
           <div className="reward">
-            <p className="second-text">Cash Prize: ₹10000</p>
+            <p className="second-text">Exciting Cash Prize and more!</p>
           </div>
         </div>
       </div>
