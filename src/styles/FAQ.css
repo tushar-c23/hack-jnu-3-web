@@ -2,22 +2,23 @@
 
  .faqsection {
      display: flex;
-     height: 400px;
-     width: 350px;
+     height: 60vh;
+     width: 40vw;
      justify-content: center;
      align-items: center;
 
-     margin: 0 600px;
+     margin-left:15%;
      position: absolute;
      background-image: url('../../faqboard.svg');
      background-repeat: no-repeat;
-     background-position: 20px;
-     background-size: 330px;
+     background-position: center;
+     background-size: contain;
  }
 
  .faqboard {
 
      display: flex;
+     margin-top: 100px;
 
      width: 200px;
 
@@ -26,38 +27,6 @@
      font-size: small;
 
 
-
- }
-
-
-
- .image1 {
-     position: relative;
-     height: 500px;
-     width: 300px;
-     top: 200px;
-     left: 63px;
- }
-
- .image2 {
-     position: relative;
-     height: 200px;
-     width: 30px;
-     top: 80px;
-     left: -17px;
- }
-
- .image3 {
-     position: relative;
-     width: 5px;
-     right: 16px;
-
- }
-
- .image4 {
-     position: relative;
-     width: 5px;
-     right: 275px;
 
  }
 
@@ -78,23 +47,24 @@
      align-items: center;
      cursor: pointer;
      border-bottom: 1px solid rgb(10, 1, 1);
-
+    font-size: 16px;
 
 
  }
 
  .answer {
-     background: #FEC5FC;
+     /* background: #FEC5FC; */
      color: rgb(10, 1, 1);
      max-height: 0;
      overflow: hidden;
-     transition: all 0.7s cubic-bezier(0, 1, 0, 1);
+    font-size: small;
+    transition: all 0.7s cubic-bezier(0, 1, 0, 1);
  }
 
  .answer.show {
 
      font-size: small;
-     background: #FEC5FC;
+     /* background: #FEC5FC; */
      color: rgb(10, 1, 1);
      height: auto;
      max-height: 300px;
