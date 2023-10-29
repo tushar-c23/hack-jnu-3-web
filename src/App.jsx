@@ -28,6 +28,8 @@ function App() {
   const [FooterTreesTarget, setFooterTreesTarget] = useState(null);
   const FooterParallaxRef = useRef();
   const [FooterParallaxTarget, setFooterParallaxTarget] = useState(null);
+  const FAQParallaxRef = useRef();
+  const [FAQParallaxTarget, setFAQParallaxTarget] = useState(null);
   const [started, setStarted] = useState(0);
   const controller = new useParallaxController();
 
@@ -47,6 +49,8 @@ function App() {
     setDistantForestTarget(DistantForestParallaxRef.current)
     setFooterTreesTarget(FooterTreesParallaxRef.current)
     setFooterParallaxTarget(FooterParallaxRef.current)
+    setFAQParallaxTarget(FAQParallaxRef.current)
+    console.log(FAQParallaxRef.current)
     setStarted(1)
     controller.update()
 
@@ -144,6 +148,20 @@ function App() {
           <Sponsors></Sponsors>
         </section>
         {/* <div className="SpaceFiller"></div> */}
+        
+        <div className="SpaceFiller"></div>
+        <section className="FAQ pages1  " ref={FAQRef} id="FAQ">
+          <Parallax 
+          translateY={["-1200px", "0px"]}
+          opacity={["0","1"]}
+          targetElement={FAQParallaxTarget}>
+          <FAQ></FAQ>
+          </Parallax>
+          <div className=""></div>
+        <div className="ParallaxTargetContainer h-1">
+          <div className="FAQParallaxTarget ParallaxTarget" ref={FAQParallaxRef}></div>
+        </div>   
+        </section>
         <section className="ParallaxStarter FooterParallax">
           <div className="ParallaxDiv">
             <FooterParallax targetElement={FooterParallaxTarget} setStarted={setStarted} started={started} />
@@ -152,12 +170,10 @@ function App() {
         <div className="ParallaxTargetContainer">
           <div className="FooterParallaxTarget ParallaxTarget" ref={FooterParallaxRef}></div>
         </div>
-        <div className="SpaceFiller"></div>
-        <section className="FAQ pages1" ref={FAQRef} id="FAQ">
-          <FAQ></FAQ>
-        </section>
+        <div className="h-[50vh]"></div>
         <div className="SpaceFiller"></div>
       </div>
+        
       <div className="h-[50vh] bg-black" ref={FooterRef} id="Footer">
         <Footer></Footer>
       </div>

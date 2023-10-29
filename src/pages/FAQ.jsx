@@ -17,7 +17,9 @@ function FAQ() {
         <div className="faqsection">
 
 
+
             <div className="faqboard">
+            <h1 className="FAQTitle">Frequently Asked Questions</h1>
                 {faqlist.map((query, i) => {
                     return (
                         <div className="query">

@@ -2,62 +2,34 @@
 
  .faqsection {
      display: flex;
-     height: 400px;
-     width: 350px;
+     height: 75vh;
+     width: 100%;
      justify-content: center;
      align-items: center;
 
-     margin: 0 600px;
+     padding: 20%;
+     /* margin-top: 5%; */
      position: absolute;
-     background-image: url('../../faqboard.svg');
-     background-repeat: no-repeat;
-     background-position: 20px;
-     background-size: 330px;
+     /* background-image: url('../../faqboard.svg'); */
  }
 
  .faqboard {
 
+    background: linear-gradient( to bottom , #00000000 , #000000aa,#000000aa , #00000000);     background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
      display: flex;
+     padding:0px 50px;
+     /* margin-top: 100px; */
 
-     width: 200px;
+     width: 50%;
 
      position: absolute;
      flex-direction: column;
      font-size: small;
+     font-family: var(--fantasy-font);
 
 
-
- }
-
-
-
- .image1 {
-     position: relative;
-     height: 500px;
-     width: 300px;
-     top: 200px;
-     left: 63px;
- }
-
- .image2 {
-     position: relative;
-     height: 200px;
-     width: 30px;
-     top: 80px;
-     left: -17px;
- }
-
- .image3 {
-     position: relative;
-     width: 5px;
-     right: 16px;
-
- }
-
- .image4 {
-     position: relative;
-     width: 5px;
-     right: 275px;
 
  }
 
@@ -72,31 +44,40 @@
 
 
  .question {
-     color: rgb(10, 1, 1);
+     color: var(--base-pink-light);
      display: flex;
      justify-content: space-between;
      align-items: center;
      cursor: pointer;
-     border-bottom: 1px solid rgb(10, 1, 1);
-
+     border-bottom: 1px solid var(--base-pink-lighter);
+    font-size: var(--font-size-large);
 
 
  }
 
  .answer {
-     background: #FEC5FC;
-     color: rgb(10, 1, 1);
+     /* background: #FEC5FC; */
+     color: var(--base-pink-lighter);
      max-height: 0;
      overflow: hidden;
-     transition: all 0.7s cubic-bezier(0, 1, 0, 1);
+    font-size: var(--font-size-heavy);
+    transition: all 0.7s cubic-bezier(0, 1, 0, 1);
  }
 
  .answer.show {
 
      font-size: small;
-     background: #FEC5FC;
-     color: rgb(10, 1, 1);
+     /* background: #FEC5FC; */
+     color: var(--base-pink-lighter);
      height: auto;
      max-height: 300px;
+     font-size: var(--font-size-heavy);
      transition: all 0.7s cubic-bezier(1, 0, 1, 0);
+ }
+
+ .FAQTitle{
+    font-size: var(--font-size-larger);
+    font-family: var(--fantasy-font);
+    color: var(--base-purple-lighter);
+    margin: 5% 0;
  }
