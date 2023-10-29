@@ -148,16 +148,9 @@ function App() {
           <Sponsors></Sponsors>
         </section>
         {/* <div className="SpaceFiller"></div> */}
-        <section className="ParallaxStarter FooterParallax">
-          <div className="ParallaxDiv">
-            <FooterParallax targetElement={FooterParallaxTarget} setStarted={setStarted} started={started} />
-          </div>
-        </section>
-        <div className="ParallaxTargetContainer">
-          <div className="FooterParallaxTarget ParallaxTarget" ref={FooterParallaxRef}></div>
-        </div>
+        
         <div className="SpaceFiller"></div>
-        <section className="FAQ pages1 sticky top-0 " ref={FAQRef} id="FAQ">
+        <section className="FAQ pages1  " ref={FAQRef} id="FAQ">
           <Parallax 
           translateY={["-1200px", "0px"]}
           opacity={["0","1"]}
@@ -169,6 +162,15 @@ function App() {
           <div className="FAQParallaxTarget ParallaxTarget" ref={FAQParallaxRef}></div>
         </div>   
         </section>
+        <section className="ParallaxStarter FooterParallax">
+          <div className="ParallaxDiv">
+            <FooterParallax targetElement={FooterParallaxTarget} setStarted={setStarted} started={started} />
+          </div>
+        </section>
+        <div className="ParallaxTargetContainer">
+          <div className="FooterParallaxTarget ParallaxTarget" ref={FooterParallaxRef}></div>
+        </div>
+        <div className="h-[50vh]"></div>
         <div className="SpaceFiller"></div>
       </div>
         
