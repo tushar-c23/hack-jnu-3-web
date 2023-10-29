@@ -2,12 +2,13 @@
 
  .faqsection {
      display: flex;
-     height: 60vh;
-     width: 40vw;
+     height: 80vh;
+     width: 100%;
      justify-content: center;
      align-items: center;
 
-     margin-left:15%;
+     padding: 20%;
+     margin-top: 5%;
      position: absolute;
      background-image: url('../../faqboard.svg');
      background-repeat: no-repeat;
