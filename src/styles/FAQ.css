@@ -2,30 +2,32 @@
 
  .faqsection {
      display: flex;
-     height: 80vh;
+     height: 75vh;
      width: 100%;
      justify-content: center;
      align-items: center;
 
      padding: 20%;
-     margin-top: 5%;
+     /* margin-top: 5%; */
      position: absolute;
-     background-image: url('../../faqboard.svg');
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: contain;
+     /* background-image: url('../../faqboard.svg'); */
  }
 
  .faqboard {
 
+    background: linear-gradient( to bottom , #00000000 , #000000aa,#000000aa , #00000000);     background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
      display: flex;
-     margin-top: 100px;
+     padding:0px 50px;
+     /* margin-top: 100px; */
 
-     width: 200px;
+     width: 50%;
 
      position: absolute;
      flex-direction: column;
      font-size: small;
+     font-family: var(--fantasy-font);
 
 
 
@@ -42,23 +44,23 @@
 
 
  .question {
-     color: rgb(10, 1, 1);
+     color: var(--base-pink-light);
      display: flex;
      justify-content: space-between;
      align-items: center;
      cursor: pointer;
-     border-bottom: 1px solid rgb(10, 1, 1);
-    font-size: 16px;
+     border-bottom: 1px solid var(--base-pink-lighter);
+    font-size: var(--font-size-large);
 
 
  }
 
  .answer {
      /* background: #FEC5FC; */
-     color: rgb(10, 1, 1);
+     color: var(--base-pink-lighter);
      max-height: 0;
      overflow: hidden;
-    font-size: small;
+    font-size: var(--font-size-heavy);
     transition: all 0.7s cubic-bezier(0, 1, 0, 1);
  }
 
@@ -66,8 +68,16 @@
 
      font-size: small;
      /* background: #FEC5FC; */
-     color: rgb(10, 1, 1);
+     color: var(--base-pink-lighter);
      height: auto;
      max-height: 300px;
+     font-size: var(--font-size-heavy);
      transition: all 0.7s cubic-bezier(1, 0, 1, 0);
+ }
+
+ .FAQTitle{
+    font-size: var(--font-size-larger);
+    font-family: var(--fantasy-font);
+    color: var(--base-purple-lighter);
+    margin: 5% 0;
  }
