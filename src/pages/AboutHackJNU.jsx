@@ -1,8 +1,13 @@
 import "../styles/About.css";
+import {Helmet} from "react-helmet";
 
 const AboutHackJNU = () => {
   return (
     <div>
+      <Helmet>
+        <title>HackJNU | About</title>
+        <meta name="description" content="About HackJNU 3.0, a 24 hour offline hackathon organised by Jawaharlal Nehru University" />
+      </Helmet>
       <div className="cardset-body flex flex-row w-3/4 mx-auto h-auto animatedContent">
         <div className="cardset w-1/3 flex">
           <div className="cardSpace">
