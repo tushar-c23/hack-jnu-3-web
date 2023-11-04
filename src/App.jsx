@@ -5,6 +5,8 @@ import { useState, useRef, useEffect } from "react";
 
 import { Parallax, useParallaxController } from "react-scroll-parallax";
 import "./App.css";
+import "./styles/AboutTeam.css";
+import "./styles/Prizes.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import AboutTeam from "./pages/AboutTeam";

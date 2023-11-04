@@ -132,11 +132,15 @@
     color: antiquewhite;
 }
 
+.ForestLayer1{
+    animation: 0.5s appearLeft;
+}
+
 .forward.MobileAbout .ForestLayer1{
-    animation: 0.5 appearLeft;
+    animation: 0.5s disappearLeft;
 }
 .backward.MobileAbout .ForestLayer1{
-    animation: 0.5 appearLeft;
+    animation: 0.5s disappearLeft;
 }
 
 /* Timeline CSS */
@@ -213,6 +217,95 @@
 }
 .forward .MobileTimelineBox , .backward .MobileTimelineBox{
     animation: 0.22s ease-out 0.44s 1 slideOutLeft;
+}
+
+/* Prizes CSS */
+
+.MobilePrizes{
+    width: 100%;
+    height: 100vh;
+    padding: 50px 10px;
+    font-family: var(--fantasy-font);
+}
+.MobilePrizes .MobilePrizesSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.PrizesTitle , .PrizesSubTitle{
+    color: antiquewhite;
+}
+
+.PrizesTitle{
+    font-size: var(--font-size-large);
+}
+
+.MobilePrizeCards{
+    display: flex;
+    flex-direction: column;
+}
+
+.MobilePrizeCard{
+    height: 80px;
+    width: 80%;
+    padding: 5px 15px;
+    margin: 10px 25px;
+    border-radius: 10px;
+    background-color: var(--base-blue-light);
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    /* justify-content: start; */
+}
+
+.MobilePrizeCard .textbox{
+    width:  calc(100% - 15px) ;
+    text-align: start;
+}
+
+.MobilePrizeCard .MainText{
+    font-size: var(--font-size-heavy);
+}
+
+.MobilePrizeCard .SubText{
+    font-size: var(--font-size-normal);
+}
+
+.MobilePrizeCard .trophyImg{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    /* transform: translateX(50px); */
+}
+.MobilePrizeCard .TrophyImgDiv{
+    width: 0;
+    height: 60px;
+    overflow-x: visible;
+}
+
+.MobilePrizeCard.firstCard{
+    width: 75%;
+}
+
+.MobilePrizeCard.secondCard{
+    width: 65%;
+}
+
+.MobilePrizeCard.thirdCard{
+    width: 55%;
+}
+
+/* Sponsors CSS */
+
+.MobileSponsors{
+    width: 100%;
+    height: 100vh;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 /* Animations */
