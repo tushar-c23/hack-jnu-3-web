@@ -50,7 +50,7 @@ const AboutHackJNU = () => {
                   All Can Register?
                 </div>
                 <div className="card-text">
-                  College students from all over India pursuing Bachelors in any STEM field can register for this Hackathon
+                  College students from all over India pursuing any graduation degree can register for this Hackathon
                 </div>
               </div>
             </div>
