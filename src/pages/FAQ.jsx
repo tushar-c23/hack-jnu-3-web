@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import React from "react";
+// import React from "react";
 import { faqlist } from "../components/faq";
 import '../styles/FAQ.css';
 function FAQ() {
