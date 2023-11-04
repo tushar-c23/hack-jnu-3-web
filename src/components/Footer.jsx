@@ -24,7 +24,10 @@ const Footer = () => {
           </a>
         </div>
         <p>
-          Know More about the <a href="#">team behind HackJNU</a>
+          {/* Know More about the <a href="#">team behind HackJNU</a> */}
+          Reach out to us at:
+          <br />
+           <a href="mailto:contactus@hackjnu.tech">contactus@hackjnu.tech</a>
         </p>
       </div>
     </div>

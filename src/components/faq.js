@@ -26,7 +26,7 @@ const faqlist = [
     },
     {
         q: "Any other questions?",
-        a: "If you have queries which have not been listed here, feel free to contact on this mail id: <abc@gmail.com>"
+        a: "If you have queries which have not been listed here, feel free to contact on this mail id: contactus@hackjnu.tech"
 
     }
 ]

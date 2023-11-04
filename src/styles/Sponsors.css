@@ -20,15 +20,33 @@
     color: antiquewhite;
 }
 .SponsorsLogos{
-    margin: 15px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 60%;
+    margin: 75px 15px;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     transition: 500ms;
     transform: scale(50%);
+}
+.SponsorsProxyText{
+    font-size: 72px;
+    /* font-family: var(--fantasy-font); */
+    letter-spacing: 10px;
+    font-weight: 25;
+    color: antiquewhite;
+    opacity: 0.75;
+    filter: drop-shadow(15px 15px 10px #646cff);
+}
+.SponsorsApply{
+    color: var(--base-pink-lighter);
+    font-size: 24px;
+    font-family: var(--fantasy-font);
+    margin: 30px;
+    letter-spacing: 2px;
+}
+.SponsorsApply a{
+    color: var(--base-blue-light);
+    opacity: 1;
 }
 /* .SponsorsLogos :hover{
     transition: 500ms;
