@@ -10,12 +10,14 @@
      padding: 20%;
      margin-top: 5%;
      position: absolute;
-     /* background-image: url('../../faqboard.svg'); */
+    background: linear-gradient( to bottom , #00000000 , #000000aa,#000000aa , #00000000);
+    /* background-image: url('../../faqboard.svg'); */
  }
 
  .faqboard {
 
-    background: linear-gradient( to bottom , #00000000 , #000000aa,#000000aa , #00000000);     background-repeat: no-repeat;
+    /* background: linear-gradient( to bottom , #00000000 , #000000aa,#000000aa , #00000000); */
+    background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
      display: flex;
