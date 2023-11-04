@@ -81,3 +81,8 @@
     color: var(--base-purple-lighter);
     margin: 5% 0;
  }
+
+ .FAQ{
+    position: relative;
+    z-index: 10;
+ }
