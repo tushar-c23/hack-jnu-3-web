@@ -22,6 +22,7 @@ const MobileHome = () => {
       </div>
       <div className="HomeLogo">
         <img src={Logo} alt="HackJNU" id="HomeLogo"/>
+        <h1>Please check the website on a desktop for best experience</h1>
       </div>
     </div>
   );
