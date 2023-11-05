@@ -5,6 +5,8 @@ import { useState, useRef, useEffect } from "react";
 
 import { Parallax, useParallaxController } from "react-scroll-parallax";
 import "./App.css";
+import "./styles/AboutTeam.css";
+import "./styles/Prizes.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import AboutTeam from "./pages/AboutTeam";
@@ -135,6 +137,12 @@ function App() {
         <section className="Prizes pages1" ref={PrizesRef} id="Prizes">
           <Prizes></Prizes>
         </section>
+        
+        <div className="h-[10vh]"></div>
+        <section className="Sponsors pages1" ref={SponsorsRef} id="Sponsors">
+          <Sponsors></Sponsors>
+        </section>
+        {/* <div className="SpaceFiller"></div> */}
         <section className="ParallaxStarter FooterTrees">
           <div className="ParallaxDiv">
             <FooterTrees targetElement={FooterTreesTarget} setStarted={setStarted} started={started} />
@@ -143,12 +151,6 @@ function App() {
         <div className="ParallaxTargetContainer">
           <div className="FooterTreesTarget ParallaxTarget" ref={FooterTreesParallaxRef} ></div>
         </div>
-        <div className="h-[10vh]"></div>
-        <section className="Sponsors pages1" ref={SponsorsRef} id="Sponsors">
-          <Sponsors></Sponsors>
-        </section>
-        {/* <div className="SpaceFiller"></div> */}
-        
         <div className="SpaceFiller"></div>
         <section className="FAQ pages1  " ref={FAQRef} id="FAQ">
           <Parallax 

@@ -57,10 +57,10 @@
 }
 @media screen and (max-width:719px){
     :root{
-        --font-size-large:20px;
-        --font-size-larger:30px;
-        --font-size-heavy:16px;
-        --font-size-normal:12px;
+        --font-size-large:36px;
+        --font-size-larger:48px;
+        --font-size-heavy:24px;
+        --font-size-normal:16px;
     }
 }
 .heavy{

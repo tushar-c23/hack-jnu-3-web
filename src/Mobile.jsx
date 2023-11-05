@@ -29,7 +29,7 @@ const Mobile = () => {
     const distance = touchStart - touchEnd;
     const isLeftSwipe = distance > minSwipeDistance;
     const isRightSwipe = distance < -minSwipeDistance;
-    if (isLeftSwipe || isRightSwipe) {
+    if (1==0) {
       if(isLeftSwipe && page<6){
         document
           .getElementById(sections[page])
