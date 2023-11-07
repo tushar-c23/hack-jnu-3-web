@@ -11,7 +11,7 @@ const faqlist = [
     },
     {
         q: "What is the team size?",
-        a: "Teams can consist of upto but not more than 3 members. Solo participation is also allowed"
+        a: "Teams can consist of upto but not more than 4 members. Solo participation is also allowed"
 
     },
     {
