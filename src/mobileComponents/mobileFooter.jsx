@@ -5,7 +5,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const MobileFooter = () => {
     return ( 
-        <div className="FooterBox">
+        <div className="FooterBox MobileFooter" id="MobileFooter">
       <div className="FooterContent ">
         <div className="FootTitle">Follow us for more at:</div>
         <div className="icons mb-8 mt-4">
