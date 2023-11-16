@@ -28,7 +28,7 @@ body{
   color: red;
 }
 
-.cards {
+.AboutTeam .cards {
   display: flex;
   text-align: center;
   margin: 0;
@@ -37,7 +37,7 @@ body{
   gap: 2rem;
 }
 
-.card {
+.AboutTeam .card {
   display: flex;
   flex-direction: column;
 
@@ -50,7 +50,7 @@ body{
 
 }
 
-.card:hover {
+.AboutTeam .card:hover {
   box-shadow: 0 8px 16px 0 #F10086;
 }
 
