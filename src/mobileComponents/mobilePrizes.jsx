@@ -1,8 +1,12 @@
 import Trophy from "../assets/trophy.svg";
 import Trophy1 from "../assets/trophy1.svg";
+import FrontTree from '../assets/MobileAssets/mobileFooterTree.svg'
 const MobilePrizes = () => {
   return (
     <div className="MobilePrizes" id="MobilePrizes">
+      <div className="background MobileFrontTree">
+        <img src={FrontTree} alt="tree?" />
+      </div>
       <div className="MobilePrizesSection">
         <p className="PrizesTitle">Compete for exciting Prizes</p>
         <div className="MobilePrizeCards">

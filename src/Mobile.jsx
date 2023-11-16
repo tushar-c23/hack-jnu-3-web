@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 import "./styles/mobile.css";
 import MobileHome from "./mobileComponents/mobileHome";
@@ -12,6 +12,7 @@ import MobileFooter from "./mobileComponents/mobileFooter";
 const Mobile = () => {
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
+  const BoxRef=useRef();
   const [page, setPage] = useState(0);
   const sections = ['MobileHome', 'MobileAbout', 'MobileTimeline', 'MobilePrizes', 'MobileSponsors', 'MobileFAQ', 'MobileFooter']
   // the required distance between touchStart and touchEnd to be detected as a swipe
@@ -29,16 +30,16 @@ const Mobile = () => {
     const distance = touchStart - touchEnd;
     const isLeftSwipe = distance > minSwipeDistance;
     const isRightSwipe = distance < -minSwipeDistance;
-    if (1==0) {
+    if (isLeftSwipe || isRightSwipe) {
       if(isLeftSwipe && page<6){
         document
           .getElementById(sections[page])
           .classList.toggle("forward", true);
         setTimeout(function () {
           setPage(page + 1);
-          document
-            .getElementById(sections[page])
-            .classList.toggle("forward", false);
+          
+          BoxRef.current.classList.toggle("ahead", true);
+          BoxRef.current.classList.toggle("back", false);
         }, 500);
       }
       else if(isRightSwipe && page>0){
@@ -47,9 +48,8 @@ const Mobile = () => {
           .classList.toggle("backward", true);
         setTimeout(function () {
           setPage(page - 1);
-          document
-            .getElementById(sections[page])
-            .classList.toggle("backward", false);
+          BoxRef.current.classList.toggle("back", true);
+          BoxRef.current.classList.toggle("ahead", false);
         }, 500);
       }
     }
@@ -63,7 +63,7 @@ const Mobile = () => {
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
     >
-      <div className="MobileBox">
+      <div className="MobileBox" id="MobileBox" ref={BoxRef}>
         {page == 0 && <MobileHome />}
         {page == 1 && <MobileAbout />}
         {page == 2 && <MobileTimeline />}

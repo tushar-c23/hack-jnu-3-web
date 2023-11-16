@@ -10,16 +10,16 @@ const Footer = () => {
       <div className="FooterContent ">
         <div className="FootTitle">Follow us for more at:</div>
         <div className="icons mb-8 mt-4">
-          <a href="https://github.com/tushar-c23/hack-jnu-3-web" target="_blank" alt="Hack JNU 3.0 Github Repository">
+          <a href="https://github.com/tushar-c23/hack-jnu-3-web" alt="Hack JNU 3.0 Github Repository">
             <GitHubIcon />
           </a>
-          <a href="https://www.instagram.com/hackjnu3.0" target="_blank" alt="@hackjnu3.0 on Instagram">
+          <a href="https://www.instagram.com/hackjnu3.0" alt="@hackjnu3.0 on Instagram">
             <InstagramIcon />
           </a>
-          <a href="https://twitter.com/hackjnu3" target="_blank" alt="@hackjnu3 on X(Twitter)">
+          <a href="https://twitter.com/hackjnu3" alt="@hackjnu3 on X(Twitter)">
             <TwitterIcon />
           </a>
-          <a href="https://www.linkedin.com/company/hackjnu-3-0/about/" target="_blank" alt="Hack JNU 3.0 on LinkedIn">
+          <a href="https://www.linkedin.com/company/hackjnu-3-0/about/" alt="Hack JNU 3.0 on LinkedIn">
             <LinkedInIcon />
           </a>
         </div>

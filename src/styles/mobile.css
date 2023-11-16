@@ -33,12 +33,14 @@
     background-color: rgb(27, 16, 41);
 }
 
-.background{
+.background , .background img{
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
+    object-fit: cover;
+    z-index: 0;
 }
 
 /* Home Page CSS from here */
@@ -132,13 +134,13 @@
     color: antiquewhite;
 }
 
-.ForestLayer1{
+.ahead .MobileAbout .ForestLayer1{
     animation: 0.5s appearLeft;
 }
 
-.forward.MobileAbout .ForestLayer1{
+/* .forward.MobileAbout .ForestLayer1{
     animation: 0.5s disappearLeft;
-}
+} */
 .backward.MobileAbout .ForestLayer1{
     animation: 0.5s disappearLeft;
 }
@@ -218,7 +220,12 @@
 .forward .MobileTimelineBox , .backward .MobileTimelineBox{
     animation: 0.22s ease-out 0.44s 1 slideOutLeft;
 }
-
+.forward.MobileTimeline .ForestLayer1{
+    animation: 0.5s disappearLeft;
+}
+.back .MobileTimeline .ForestLayer1{
+    animation: 0.5s appearLeft;
+}
 /* Prizes CSS */
 
 .MobilePrizes{
@@ -245,6 +252,7 @@
 .MobilePrizeCards{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .MobilePrizeCard{
@@ -297,17 +305,156 @@
     width: 55%;
 }
 
+.MobilePrizeCard{
+    animation: 0.44s ease-out 0s 1 scaleUpLeft;
+}
+.MobilePrizes.backward .MobilePrizeCard , .MobilePrizes.forward .MobilePrizeCard{
+    animation: 0.44s ease-out 0s 1 scaleDownLeft;
+}
+.MobilePrizeCard .textbox{
+    /* animation: 0.22s ease-out 0.33s 1 slideInLeft; */
+    overflow-x: hidden;
+    max-height: 100%;
+    white-space: nowrap;
+}
+
+.MobileFrontTree img{
+    opacity: 75%;
+}
+
+.MobilePrizes.backward .MobileFrontTree{
+    animation: 0.5s fadeOut;
+}
+.ahead .MobilePrizes .MobileFrontTree{
+    animation: 0.5s fadeIn;
+}
+
 /* Sponsors CSS */
 
 .MobileSponsors{
     width: 100%;
     height: 100vh;
-    padding: 50px 10px;
+    padding: 50px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    background: linear-gradient( to right , #00000000 , #00000044,#00000044 , #00000000);
+    font-family: var(--fantasy-font);
 }
 
+.MobileSponsorsText{
+    color: antiquewhite;
+    font-size: var(--font-size-heavy);
+}
+
+.MobileSponsorsLogos{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.MobileSponsorsProxyText{
+    font-size: var(--font-size-large);
+    margin: 20px 0;
+    color: antiquewhite;
+    opacity: 0.75;
+}
+
+.MobileSponsorsApply{
+    color: var(--base-pink-lighter);
+}
+.MobileSponsorsApply a{
+    color: var(--base-blue-light);
+}
+
+.MobileSponsorsLogos{
+    animation: 0.44s ease-out 0s 1 scaleOut;
+}
+.MobileSponsors.backward .MobileSponsorsLogos , .MobileSponsors.forward .MobileSponsorsLogos{
+    animation: 0.44s ease-out 0s 1 scaleIn;
+}
+/* Mobile FAQ css */
+
+.MobileFAQ{
+    width: 100%;
+    height: 100vh;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: var(--fantasy-font);
+}
+
+.MobileFaqTitle{
+    font-size: var(--font-size-large);
+    color: antiquewhite;
+}
+.MobileFaqBoard{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.MobileFaqBoard .query{
+    padding: 3px;
+}
+.MobileFaqBoard .question{
+    color: var(--base-pink-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid var(--base-pink-lighter);
+    font-size: var(--font-size-heavy);
+}
+
+.MobileFaqBoard .answer {
+    color: var(--base-pink-lighter);
+    max-height: 0;
+    overflow: hidden;
+    font-size: var(--font-size-normal);
+    transition: all 0.7s cubic-bezier(0, 1, 0, 1);
+}
+
+.MobileFaqBoard .answer.show{
+    font-size: var(--font-size-normal);
+    color: var(--base-pink-lighter);
+    height: auto;
+    max-height: 300px;
+    transition: all 0.7s cubic-bezier(0, 1, 0, 1);
+}
+.MobileFaqBoard .query{
+    transform: translateY(400px);
+}
+.MobileFaqBoard .query.q0{
+    animation: 0.44s linear 0s 1 slideInDown;
+    animation-fill-mode: forwards;
+}
+.MobileFaqBoard .query.q1{
+    animation: 0.44s ease-out 0.44s 1 slideInDown;
+    animation-fill-mode: forwards;
+}
+.MobileFaqBoard .query.q2{
+    animation: 0.44s linear 0.88s 1 slideInDown;
+    animation-fill-mode: forwards;
+}
+.MobileFaqBoard .query.q3{
+    animation: 0.44s ease-out 1.32s 1 slideInDown;
+    animation-fill-mode: forwards;
+}
+.MobileFaqBoard .query.q4{
+    animation: 0.44s linear 1.76s 1 slideInDown;
+    animation-fill-mode: forwards;
+}
+.MobileFaqBoard .query.q5{
+    animation: 0.44s ease-out 2.2s 1 slideFAQInDown;
+    animation-fill-mode: forwards;
+}
+
+.MobileFAQ.backward .query, .MobileFAQ.forward .query{
+    animation: 0.5s ease-out 0s 1 slideFAQOutDown;
+}
 /* Animations */
 
 @keyframes slideInUpDown {
@@ -452,5 +599,66 @@
     from {
         opacity: 0.75;
         transform: translateX(0);
+    }
+}
+@keyframes scaleUpLeft {
+    from{
+        width: 0;
+    }
+}
+@keyframes scaleDownLeft {
+    to{
+        width: 0;
+    }
+}
+@keyframes scaleOut {
+    from{
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+@keyframes scaleIn {
+    from{
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
+}
+@keyframes fadeOut {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes slideFAQOutDown {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(400px);
+    }
+}
+@keyframes slideFAQInDown {
+    0% {
+        transform: translateY(400px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
