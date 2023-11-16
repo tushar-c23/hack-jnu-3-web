@@ -33,12 +33,14 @@
     background-color: rgb(27, 16, 41);
 }
 
-.background{
+.background , .background img{
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
+    object-fit: cover;
+    z-index: 0;
 }
 
 /* Home Page CSS from here */
@@ -132,13 +134,13 @@
     color: antiquewhite;
 }
 
-.ForestLayer1{
+.ahead .MobileAbout .ForestLayer1{
     animation: 0.5s appearLeft;
 }
 
-.forward.MobileAbout .ForestLayer1{
+/* .forward.MobileAbout .ForestLayer1{
     animation: 0.5s disappearLeft;
-}
+} */
 .backward.MobileAbout .ForestLayer1{
     animation: 0.5s disappearLeft;
 }
@@ -218,7 +220,12 @@
 .forward .MobileTimelineBox , .backward .MobileTimelineBox{
     animation: 0.22s ease-out 0.44s 1 slideOutLeft;
 }
-
+.forward.MobileTimeline .ForestLayer1{
+    animation: 0.5s disappearLeft;
+}
+.back .MobileTimeline .ForestLayer1{
+    animation: 0.5s appearLeft;
+}
 /* Prizes CSS */
 
 .MobilePrizes{
@@ -245,7 +252,7 @@
 .MobilePrizeCards{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .MobilePrizeCard{
@@ -301,13 +308,27 @@
 .MobilePrizeCard{
     animation: 0.44s ease-out 0s 1 scaleUpLeft;
 }
-
+.MobilePrizes.backward .MobilePrizeCard , .MobilePrizes.forward .MobilePrizeCard{
+    animation: 0.44s ease-out 0s 1 scaleDownLeft;
+}
 .MobilePrizeCard .textbox{
     /* animation: 0.22s ease-out 0.33s 1 slideInLeft; */
     overflow-x: hidden;
     max-height: 100%;
     white-space: nowrap;
 }
+
+.MobileFrontTree img{
+    opacity: 75%;
+}
+
+.MobilePrizes.backward .MobileFrontTree{
+    animation: 0.5s fadeOut;
+}
+.ahead .MobilePrizes .MobileFrontTree{
+    animation: 0.5s fadeIn;
+}
+
 /* Sponsors CSS */
 
 .MobileSponsors{
@@ -349,7 +370,9 @@
 .MobileSponsorsLogos{
     animation: 0.44s ease-out 0s 1 scaleOut;
 }
-
+.MobileSponsors.backward .MobileSponsorsLogos , .MobileSponsors.forward .MobileSponsorsLogos{
+    animation: 0.44s ease-out 0s 1 scaleIn;
+}
 /* Mobile FAQ css */
 
 .MobileFAQ{
@@ -425,8 +448,12 @@
     animation-fill-mode: forwards;
 }
 .MobileFaqBoard .query.q5{
-    animation: 0.44s ease-out 2.2s 1 slideInDown;
+    animation: 0.44s ease-out 2.2s 1 slideFAQInDown;
     animation-fill-mode: forwards;
+}
+
+.MobileFAQ.backward .query, .MobileFAQ.forward .query{
+    animation: 0.5s ease-out 0s 1 slideFAQOutDown;
 }
 /* Animations */
 
@@ -579,11 +606,59 @@
         width: 0;
     }
 }
+@keyframes scaleDownLeft {
+    to{
+        width: 0;
+    }
+}
 @keyframes scaleOut {
     from{
         transform: scale(0);
     }
     to {
         transform: scale(1);
+    }
+}
+@keyframes scaleIn {
+    from{
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
+}
+@keyframes fadeOut {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes slideFAQOutDown {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(400px);
+    }
+}
+@keyframes slideFAQInDown {
+    0% {
+        transform: translateY(400px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }

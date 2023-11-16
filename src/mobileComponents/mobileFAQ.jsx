@@ -1,5 +1,9 @@
 import { faqlist } from "../components/faq";
 import { useState } from "react";
+
+import FrontTree from '../assets/MobileAssets/mobileFooterTree.svg'
+
+
 const MobileFAQ = () => {
   const [selected, setSelected] = useState(0);
   const toggle = (i) => {
@@ -10,6 +14,9 @@ const MobileFAQ = () => {
   };
   return (
     <div className="MobileFAQ" id="MobileFAQ">
+      <div className="background MobileFrontTree">
+        <img src={FrontTree} alt="tree?" />
+      </div>
       <h1 className="MobileFaqTitle">FAQs</h1>
       <div className="MobileFaqBoard">
         {faqlist.map((query, i) => {

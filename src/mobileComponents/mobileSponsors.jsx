@@ -1,6 +1,10 @@
+import FrontTree from '../assets/MobileAssets/mobileFooterTree.svg'
 const MobileSponsors = () => {
   return (
     <div className="MobileSponsors" id="MobileSponsors">
+      <div className="background MobileFrontTree">
+        <img src={FrontTree} alt="tree?" />
+      </div>
         <div className="MobileSponsorsText">A Special Thanks to:</div>
         <div className="MobileSponsorsLogos">
           <h1 className="MobileSponsorsProxyText">* Sponsors to be revealed soon*</h1>

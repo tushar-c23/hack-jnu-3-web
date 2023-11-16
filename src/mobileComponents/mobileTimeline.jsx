@@ -5,9 +5,14 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 
+import ForestLayer1 from '../assets/MobileAssets/ForestLayer1.svg'
+
 const MobileTimeline = () => {
   return (
     <div className="MobileTimeline" id="MobileTimeline">
+      <div className="background ForestLayer1">
+        <img src={ForestLayer1} alt="trees?" />
+      </div>
       <Timeline position="right" className="MobileTimelineBox">
         <TimelineItem>
           <TimelineSeparator>
