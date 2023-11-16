@@ -302,10 +302,87 @@
 .MobileSponsors{
     width: 100%;
     height: 100vh;
-    padding: 50px 10px;
+    padding: 50px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    background: linear-gradient( to right , #00000000 , #00000044,#00000044 , #00000000);
+
+}
+
+.MobileSponsorsText{
+    color: antiquewhite;
+    font-size: var(--font-size-heavy);
+}
+
+.MobileSponsorsLogos{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.MobileSponsorsProxyText{
+    font-size: var(--font-size-large);
+    margin: 20px 0;
+    color: antiquewhite;
+    opacity: 0.75;
+}
+
+.MobileSponsorsApply{
+    color: var(--base-pink-lighter);
+}
+.MobileSponsorsApply a{
+    color: var(--base-blue-light);
+}
+
+/* Mobile FAQ css */
+
+.MobileFAQ{
+    width: 100%;
+    height: 100vh;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.MobileFaqTitle{
+    font-size: var(--font-size-large);
+    color: antiquewhite;
+}
+.MobileFaqBoard{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.MobileFaqBoard .question{
+    color: var(--base-pink-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid var(--base-pink-lighter);
+    font-size: var(--font-size-heavy);
+}
+
+.MobileFaqBoard .answer {
+    color: var(--base-pink-lighter);
+    max-height: 0;
+    overflow: hidden;
+    font-size: var(--font-size-normal);
+    transition: all 0.7s cubic-bezier(0, 1, 0, 1);
+}
+
+.MobileFaqBoard .answer.show{
+    font-size: var(--font-size-normal);
+    color: var(--base-pink-lighter);
+    height: auto;
+    max-height: 300px;
+    transition: all 0.7s cubic-bezier(0, 1, 0, 1);
 }
 
 /* Animations */

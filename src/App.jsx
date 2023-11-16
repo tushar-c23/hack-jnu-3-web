@@ -47,6 +47,9 @@ function App() {
   const [headingNumber, setHeadingNumber] = useState(0)
 
   useEffect(() => {
+
+    window.scrollTo(0,0)
+
     // Setting Parallax target refs here
     setDistantForestTarget(DistantForestParallaxRef.current)
     setFooterTreesTarget(FooterTreesParallaxRef.current)
