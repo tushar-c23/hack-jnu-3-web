@@ -9,7 +9,7 @@ const MobileSponsors = () => {
         <img src={FrontTree} alt="tree?" />
       </div>
         <div className="MobileSponsorsText">A Special Thanks to:</div>
-        <div className="MobileSponsorsLogos">
+        <div className="MobileSponsorsLogos flex justify-center items-center">
           {/* <h1 className="MobileSponsorsProxyText">* Sponsors to be revealed soon*</h1> */}
           <div className="company">
                 <div className="companyLogo DevFolio">
