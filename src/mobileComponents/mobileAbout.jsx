@@ -22,10 +22,17 @@ const MobileAbout = () => {
             Can I Register?
           </div>
           <div className="AboutBox-Content">
-            Registration will be handled using DevFolio , Follow this{" "}
-            <a href="#" className="text-pink-100">
-              Link to registration
-            </a>
+          <div className="card-text">
+                  Registration is live on DevFolio.
+                  <br />
+                  <div
+                    className="apply-button"
+                    data-hackathon-slug="hackjnu-3"
+                    data-button-theme="dark"
+                    style={{height: "44px", width: "312px"}}
+                  >
+                  </div>
+                  </div>
           </div>
         </div>
         <div className="Box inLeft">
