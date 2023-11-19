@@ -351,6 +351,12 @@
     padding: 15px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.MobileSponsorsLogos .company{
+    width: 70%;
 }
 
 .MobileSponsorsProxyText{

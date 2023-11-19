@@ -48,6 +48,15 @@ function App() {
 
   useEffect(() => {
 
+
+  const script = document.createElement('script');
+  script.src = 'https://apply.devfolio.co/v2/sdk.js';
+  script.async = true;
+  script.defer = true;
+  document.body.appendChild(script);
+  
+
+
     window.scrollTo(0,0)
 
     // Setting Parallax target refs here
@@ -86,7 +95,9 @@ function App() {
     }
     )
     console.log(ContentObserver)
-
+    return () => {
+      document.body.removeChild(script);
+    }
   }, [controller])
 
   const NavHandler = function (entries) {
