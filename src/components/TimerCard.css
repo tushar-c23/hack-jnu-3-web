@@ -32,6 +32,14 @@
 .countdown-title {
     color: antiquewhite;
 }
+
+@media screen and (max-width: 750px) {
+    .timerCard {
+        width: 80px !important;
+        height: 96px !important;
+    }
+}
+
 .timerCards{
     display: flex;
     flex-direction: row;
