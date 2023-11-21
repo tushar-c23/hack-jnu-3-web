@@ -41,8 +41,8 @@ const MobileAbout = () => {
             All Can Register?
           </div>
           <div className="AboutBox-Content">
-            College students from all over India pursuing Engineeering can
-            register for the Hackkathon
+            College students from all over India pursuing Engineering can
+            register for the Hackathon
           </div>
         </div>
         <div className="Box inRight">

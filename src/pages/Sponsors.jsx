@@ -7,7 +7,7 @@ const Sponsors = () => {
   return (
     <div className="SponsorsBox ">
       <div className="SponsorsText">A Special Thanks to:</div>
-      <div className="SponsorsLogos animatedContent">
+      <div className="SponsorsLogos animatedContent flex justify-center items-center">
         <div className="company">
           <div className="companyLogo DevFolio">
             <img src={DevFolioLogo} alt="DEVFOLIO LOGO" />
