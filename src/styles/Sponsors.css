@@ -59,6 +59,12 @@
 .companyLogo{
     filter: drop-shadow(5px 5px 10px #646cff);
 }
+.companyLogo.Gold{
+    filter: drop-shadow(5px 5px 10px #FFD700);
+}
+.companyLogo.Silver{
+    filter: drop-shadow(5px 5px 10px #C0C0C0);
+}
 /* .companyLogo :hover{
     filter: drop-shadow(10px 10px 15px #FFFFFF);
 } */

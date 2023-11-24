@@ -26,7 +26,13 @@ const MobileHome = () => {
         <div id="HomeCountdown">
           <Countdown />
         </div>
-        <h1>Please check the website on a desktop for best experience</h1>
+        <div className="alert">
+          <p className="slide">
+            <p className="AlertText">Slide to switch page</p>
+            <span className="AlertIcon">{">"}</span>
+            </p>
+          <p className="pcAlert">For full experience of the website , please see the desktop version</p>
+        </div>
       </div>
     </div>
   );

@@ -12,17 +12,17 @@ const MobileSponsors = () => {
         <div className="MobileSponsorsLogos flex justify-center items-center">
           {/* <h1 className="MobileSponsorsProxyText">* Sponsors to be revealed soon*</h1> */}
           <div className="company">
-                <div className="companyLogo DevFolio">
+                <div className="companyLogo DevFolio Gold">
                     <img src={DevFolioLogo} alt="DEVFOLIO LOGO" />
                 </div>
             </div>
             <div className="company">
-                <div className="companyLogo Polygon">
+                <div className="companyLogo Polygon Gold">
                     <img src={PolygonLogo} alt="POLYGON LOGO" />
                 </div>
             </div>
             <div className="company">
-                <div className="companyLogo Replit">
+                <div className="companyLogo Replit Silver">
                     <img src={ReplitLogo} alt="REPLIT LOGO" />
                 </div>
             </div>

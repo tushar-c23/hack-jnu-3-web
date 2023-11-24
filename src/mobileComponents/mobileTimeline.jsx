@@ -23,9 +23,9 @@ const MobileTimeline = () => {
             <div className="MobileTimeLineContent content1">
               <div className="MTLDate">
                 <p>
-                  <span>3rd</span>
+                  <span>22nd</span>
                   <br />
-                  Sept
+                  Nov
                 </p>
               </div>
               <div className="MTLTitle">Registration Begins</div>
@@ -41,9 +41,9 @@ const MobileTimeline = () => {
             <div className="MobileTimeLineContent content2">
               <div className="MTLDate">
                 <p>
-                  <span>30th</span>
+                  <span>Date</span>
                   <br />
-                  Sept
+                  TBD
                 </p>
               </div>
               <div className="MTLTitle">Registration Ends</div>
@@ -59,9 +59,9 @@ const MobileTimeline = () => {
             <div className="MobileTimeLineContent content3">
               <div className="MTLDate">
                 <p>
-                  <span>14th</span>
+                  <span>27th</span>
                   <br />
-                  Oct
+                  Jan
                 </p>
               </div>
               <div className="MTLTitle">Day Of the Hackathon</div>
@@ -76,15 +76,16 @@ const MobileTimeline = () => {
             <div className="MobileTimeLineContent content4">
               <div className="MTLDate">
                 <p>
-                  <span>15th</span>
+                  <span>28th</span>
                   <br />
-                  Oct
+                  Jan
                 </p>
               </div>
               <div className="MTLTitle">Results Declared</div>
             </div>
           </TimelineContent>
         </TimelineItem>
+      <p className="disclaimer">All dates are subjected to changes</p>
       </Timeline>
     </div>
   );
