@@ -45,7 +45,7 @@
 
 /* Home Page CSS from here */
 
-.HomeLogo{
+.Home{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,6 +58,15 @@
     top: 20%;
     animation: 0.5s ease-out 0s 1 slideInUp;
 }
+
+#HomeCountdown{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    position: absolute;
+    top: 40%;
+}
+
 .MobileHome {
     width: 100%;
     height: 100vh;

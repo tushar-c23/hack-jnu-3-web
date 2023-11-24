@@ -7,6 +7,7 @@ import Layer6 from "../assets/MobileAssets/Layer6.svg";
 import Layer7 from "../assets/MobileAssets/Layer7.svg";
 
 import Logo from '../assets/logo.png'
+import Countdown from "../components/Countdown";
 
 const MobileHome = () => {
   return (
@@ -20,8 +21,11 @@ const MobileHome = () => {
         <img src={Layer2} alt="Mountains" className="InDown"/>
         <img src={Layer1} alt="Mountains" className="InDown"/>
       </div>
-      <div className="HomeLogo">
+      <div className="Home">
         <img src={Logo} alt="HackJNU" id="HomeLogo"/>
+        <div id="HomeCountdown">
+          <Countdown />
+        </div>
         <h1>Please check the website on a desktop for best experience</h1>
       </div>
     </div>
