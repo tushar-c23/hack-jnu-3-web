@@ -57,6 +57,22 @@
     width: 33%;
     padding: 20px;
 }
+.company.Gold{
+    width: 33%;
+    padding: 20px;
+}
+.company.Silver{
+    width: 25%;
+    padding: 20px;
+}
+.company.Bronze{
+    width: 20%;
+    padding: 20px;
+}
+/* JDoodle logo came with padding */
+.company.JDoodle{
+    padding: 0;
+}
 .companyLogo{
     filter: drop-shadow(5px 5px 10px #646cff);
     width: 100%;
@@ -75,4 +91,8 @@
 } */
 .SponsorsBox> .animatedContent.show.SponsorsLogos{
     transform: scale(100%);
+}
+.SponsorBreak{
+    width: 100%;
+    height: 0px;
 }
