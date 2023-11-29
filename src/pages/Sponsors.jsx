@@ -2,31 +2,41 @@
 import DevFolioLogo from "../assets/SponsorLogos/Devfolio_Logo-White.png";
 import PolygonLogo from "../assets/SponsorLogos/Polygon_Logo-White.png";
 import ReplitLogo from "../assets/SponsorLogos/Replit-Dark-Background.png";
-import JDoodleLogo from '../assets/SponsorLogos/JDoodle.png'
+import JDoodleLogo from "../assets/SponsorLogos/JDoodle.png";
 import "../styles/Sponsors.css";
 const Sponsors = () => {
   return (
     <div className="SponsorsBox ">
       <div className="SponsorsText">A Special Thanks to:</div>
       <div className="SponsorsLogos animatedContent flex justify-center items-center">
-        <div className="company">
+        <div className="company Gold">
           <div className="companyLogo DevFolio Gold">
-            <img src={DevFolioLogo} alt="DEVFOLIO LOGO" />
+            <a href="https://devfolio.co/">
+              <img src={DevFolioLogo} alt="DEVFOLIO LOGO" />
+            </a>
           </div>
         </div>
-        <div className="company">
+        <div className="company Gold">
           <div className="companyLogo Polygon Gold">
-            <img src={PolygonLogo} alt="POLYGON LOGO" />
+            <a href="https://polygon.technology/">
+              <img src={PolygonLogo} alt="POLYGON LOGO" />
+            </a>
           </div>
         </div>
-        <div className="company">
+        <div className="SponsorBreak" />
+        <div className="company Silver">
           <div className="companyLogo Replit Silver">
-            <img src={ReplitLogo} alt="REPLIT LOGO" />
+            <a href="https://replit.com/">
+              <img src={ReplitLogo} alt="REPLIT LOGO" />
+            </a>
           </div>
         </div>
-        <div className="company">
+        <div className="SponsorBreak" />
+        <div className="company Bronze JDoodle">
           <div className="companyLogo JDoodle Bronze">
-            <img src={JDoodleLogo} alt="JDoodle LOGO" />
+            <a href="https://www.jdoodle.com/?utm_source=HackJNU&utm_medium=Event&utm_campaign=Hackathon+Sponsorship">
+              <img src={JDoodleLogo} alt="JDoodle LOGO" />
+            </a>
           </div>
         </div>
         {/* <div className="company">
