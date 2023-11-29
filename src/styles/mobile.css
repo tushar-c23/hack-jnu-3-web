@@ -95,6 +95,40 @@
     animation: 0.55s ease-in 0s 1  slideOutUp;
 }
 
+.MobileHome .alert{
+    position: absolute;
+    bottom: 0px;
+    /* height: 50px; */
+    width: 90%;
+    margin: 2% 10%;
+    color: antiquewhite;
+    
+    animation: 10s ease-out 0s infinite alerts;
+
+}
+
+.MobileHome .alert .slide{
+    width: 100%;
+    /* padding: 15px; */
+    margin: 5px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    border: antiquewhite 2px solid;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+.MobileHome .alert .slide .AlertText{
+    width: 80%;
+    border-right: antiquewhite 2px solid;
+    padding: 15px;
+}
+.MobileHome .alert .slide .AlertIcon{
+    width: 20%;
+    padding: 15px;
+}
 /* Abour section CSS from here */
 
 .MobileAbout{
@@ -234,6 +268,10 @@
 }
 .back .MobileTimeline .ForestLayer1{
     animation: 0.5s appearLeft;
+}
+
+.MobileTimeline .disclaimer{
+    color: antiquewhite;
 }
 /* Prizes CSS */
 
@@ -410,6 +448,7 @@
     height: 100%;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
 }
 .MobileFaqBoard .query{
     padding: 3px;
@@ -443,23 +482,23 @@
     transform: translateY(400px);
 }
 .MobileFaqBoard .query.q0{
-    animation: 0.44s linear 0s 1 slideInDown;
+    animation: 0.44s linear 0s 1 slideFAQInDown;
     animation-fill-mode: forwards;
 }
 .MobileFaqBoard .query.q1{
-    animation: 0.44s ease-out 0.44s 1 slideInDown;
+    animation: 0.44s ease-out 0.44s 1 slideFAQInDown;
     animation-fill-mode: forwards;
 }
 .MobileFaqBoard .query.q2{
-    animation: 0.44s linear 0.88s 1 slideInDown;
+    animation: 0.44s linear 0.88s 1 slideFAQInDown;
     animation-fill-mode: forwards;
 }
 .MobileFaqBoard .query.q3{
-    animation: 0.44s ease-out 1.32s 1 slideInDown;
+    animation: 0.44s ease-out 1.32s 1 slideFAQInDown;
     animation-fill-mode: forwards;
 }
 .MobileFaqBoard .query.q4{
-    animation: 0.44s linear 1.76s 1 slideInDown;
+    animation: 0.44s linear 1.76s 1 slideFAQInDown;
     animation-fill-mode: forwards;
 }
 .MobileFaqBoard .query.q5{
@@ -675,5 +714,22 @@
 
     100% {
         transform: translateY(0);
+    }
+}
+@keyframes alerts {
+    0%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.8;
+    }
+    60%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
     }
 }

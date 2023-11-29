@@ -43,6 +43,7 @@
     font-family: var(--fantasy-font);
     margin: 30px;
     letter-spacing: 2px;
+    width: 100%;
 }
 .SponsorsApply a{
     color: var(--base-blue-light);
@@ -58,6 +59,16 @@
 }
 .companyLogo{
     filter: drop-shadow(5px 5px 10px #646cff);
+    width: 100%;
+}
+.companyLogo.Gold{
+    filter: drop-shadow(5px 5px 10px #FFD700);
+}
+.companyLogo.Silver{
+    filter: drop-shadow(5px 5px 10px #C0C0C0);
+}
+.companyLogo.Bronze{
+    filter: drop-shadow(5px 5px 10px #CD7F32);
 }
 /* .companyLogo :hover{
     filter: drop-shadow(10px 10px 15px #FFFFFF);

@@ -2,6 +2,7 @@
 import DevFolioLogo from "../assets/SponsorLogos/Devfolio_Logo-White.png";
 import PolygonLogo from "../assets/SponsorLogos/Polygon_Logo-White.png";
 import ReplitLogo from "../assets/SponsorLogos/Replit-Dark-Background.png";
+import JDoodleLogo from '../assets/SponsorLogos/JDoodle.png'
 import "../styles/Sponsors.css";
 const Sponsors = () => {
   return (
@@ -9,18 +10,23 @@ const Sponsors = () => {
       <div className="SponsorsText">A Special Thanks to:</div>
       <div className="SponsorsLogos animatedContent flex justify-center items-center">
         <div className="company">
-          <div className="companyLogo DevFolio">
+          <div className="companyLogo DevFolio Gold">
             <img src={DevFolioLogo} alt="DEVFOLIO LOGO" />
           </div>
         </div>
         <div className="company">
-          <div className="companyLogo Polygon">
+          <div className="companyLogo Polygon Gold">
             <img src={PolygonLogo} alt="POLYGON LOGO" />
           </div>
         </div>
         <div className="company">
-          <div className="companyLogo Replit">
+          <div className="companyLogo Replit Silver">
             <img src={ReplitLogo} alt="REPLIT LOGO" />
+          </div>
+        </div>
+        <div className="company">
+          <div className="companyLogo JDoodle Bronze">
+            <img src={JDoodleLogo} alt="JDoodle LOGO" />
           </div>
         </div>
         {/* <div className="company">

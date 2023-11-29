@@ -20,12 +20,12 @@ const TimelineComponent = () => {
             <div className="TimeLineContent right">
               <div className="TLDate">
                 <p>
-                  <span>Date</span>
+                  <span>22nd</span>
                   <br />
-                  TBD
+                  Nov
                 </p>
               </div>
-              <div className="TLTitle">Registration Begins</div>
+              <div className="TLTitle">Registration has begun</div>
             </div>
           </TimelineContent>
         </TimelineItem>

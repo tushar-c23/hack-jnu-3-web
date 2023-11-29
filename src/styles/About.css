@@ -84,3 +84,10 @@
 .card-link:hover {
     color: #E55934;
 }
+
+.DevfolioButton{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
