@@ -3,6 +3,7 @@ import DevFolioLogo from "../assets/SponsorLogos/Devfolio_Logo-White.png";
 import PolygonLogo from "../assets/SponsorLogos/Polygon_Logo-White.png";
 import ReplitLogo from "../assets/SponsorLogos/Replit-Dark-Background.png";
 import JDoodleLogo from "../assets/SponsorLogos/JDoodle.png";
+import AbilityConnectLogo from "../assets/SponsorLogos/AbilityConnectLogo.png";
 import "../styles/Sponsors.css";
 const Sponsors = () => {
   return (
@@ -36,6 +37,13 @@ const Sponsors = () => {
           <div className="companyLogo JDoodle Bronze">
             <a href="https://www.jdoodle.com/?utm_source=HackJNU&utm_medium=Event&utm_campaign=Hackathon+Sponsorship">
               <img src={JDoodleLogo} alt="JDoodle LOGO" />
+            </a>
+          </div>
+        </div>
+        <div className="company Bronze AbilityConnect">
+          <div className="companyLogo AbilityConnect Bronze">
+            <a href="https://abilityconnect.com.au">
+              <img src={AbilityConnectLogo} alt="Ability Connect LOGO" />
             </a>
           </div>
         </div>
